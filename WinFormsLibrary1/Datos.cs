@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using WinFormsLibrary1.Modelos;
@@ -8,14 +7,69 @@ namespace WinFormsLibrary1
 {
     public class Datos
     {
-        SqlConnection connection;
+        public SqlConnection connection;
 
-        public Datos()
+        public Datos(SqlConnection SQLconnection)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
-            connection = new SqlConnection(connectionString);
+            this.connection = SQLconnection;
         }
 
+        //GetByUserName
+
+        public Entidad GetEntidadesByUserName(string UserName)
+        {
+            try
+            {
+                connection.Open();
+
+                SqlCommand command = new SqlCommand("select * from Entidades where UserNameEntidad = @UserName", connection);
+
+                command.Parameters.AddWithValue("@UserName", UserName);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                Entidad data = new Entidad();
+
+                while (reader.Read())
+                {
+                    data.IdEntidad = reader.IsDBNull(0) ? 0 : reader.GetInt32(0);
+                    data.Descripcion = reader.IsDBNull(1) ? "" : reader.GetString(1);
+                    data.Direccion = reader.IsDBNull(2) ? "" : reader.GetString(2);
+                    data.Localidad = reader.IsDBNull(3) ? "" : reader.GetString(3);
+                    data.TipoEntidad = reader.IsDBNull(4) ? "" : reader.GetString(4);
+                    data.TipoDocumento = reader.IsDBNull(5) ? "" : reader.GetString(5);
+                    data.NumeroDocumento = reader.IsDBNull(6) ? 0 : reader.GetDecimal(6);
+                    data.Teléfonos = reader.IsDBNull(7) ? "" : reader.GetString(7);
+                    data.URLPaginaWeb = reader.IsDBNull(8) ? "" : reader.GetString(8);
+                    data.URLFacebook = reader.IsDBNull(9) ? "" : reader.GetString(9);
+                    data.URLInstagram = reader.IsDBNull(10) ? "" : reader.GetString(10);
+                    data.URLTwitter = reader.IsDBNull(11) ? "" : reader.GetString(11);
+                    data.URLTikTok = reader.IsDBNull(12) ? "" : reader.GetString(12);
+                    data.IdGrupoEntidad = reader.IsDBNull(13) ? 0 : reader.GetInt32(13);
+                    data.IdTipoEntidad = reader.IsDBNull(14) ? 0 : reader.GetInt32(14);
+                    data.LimiteCredito = reader.IsDBNull(15) ? 0 : reader.GetDecimal(15);
+                    data.UserNameEntidad = reader.IsDBNull(16) ? "" : reader.GetString(16);
+                    data.PassworEntidad = reader.IsDBNull(17) ? "" : reader.GetString(17);
+                    data.RolUserEntidad = reader.IsDBNull(18) ? "" : reader.GetString(18);
+                    data.Comentario = reader.IsDBNull(19) ? "" : reader.GetString(19);
+                    data.Status = reader.IsDBNull(20) ? "" : reader.GetString(20);
+                    data.NoEliminable = reader.IsDBNull(21) ? new Boolean() : reader.GetBoolean(21);
+                }
+
+                reader.Close();
+                reader.Dispose();
+                connection.Close();
+
+                return data;
+
+            }
+            catch (Exception e)
+            {
+
+                return null;
+
+            }
+        }
 
 
         //GETBYID
@@ -42,16 +96,16 @@ namespace WinFormsLibrary1
                     data.Localidad = reader.IsDBNull(3) ? "" : reader.GetString(3);
                     data.TipoEntidad = reader.IsDBNull(4) ? "" : reader.GetString(4);
                     data.TipoDocumento = reader.IsDBNull(5) ? "" : reader.GetString(5);
-                    data.NumeroDocumento = reader.IsDBNull(6) ? 0 : reader.GetInt32(6);
+                    data.NumeroDocumento = reader.IsDBNull(6) ? 0 : reader.GetDecimal(6);
                     data.Teléfonos = reader.IsDBNull(7) ? "" : reader.GetString(7);
-                    data.URLPaginaWeb = reader.IsDBNull(8) ? "": reader.GetString(8);
+                    data.URLPaginaWeb = reader.IsDBNull(8) ? "" : reader.GetString(8);
                     data.URLFacebook = reader.IsDBNull(9) ? "" : reader.GetString(9);
-                    data.URLInstagram = reader.IsDBNull(10) ? "" : reader.GetString(10);   
+                    data.URLInstagram = reader.IsDBNull(10) ? "" : reader.GetString(10);
                     data.URLTwitter = reader.IsDBNull(11) ? "" : reader.GetString(11);
                     data.URLTikTok = reader.IsDBNull(12) ? "" : reader.GetString(12);
                     data.IdGrupoEntidad = reader.IsDBNull(13) ? 0 : reader.GetInt32(13);
                     data.IdTipoEntidad = reader.IsDBNull(14) ? 0 : reader.GetInt32(14);
-                    data.LimiteCredito = reader.IsDBNull(15) ? 0 : reader.GetInt32(15);
+                    data.LimiteCredito = reader.IsDBNull(15) ? 0 : reader.GetDecimal(15);
                     data.UserNameEntidad = reader.IsDBNull(16) ? "" : reader.GetString(16);
                     data.PassworEntidad = reader.IsDBNull(17) ? "" : reader.GetString(17);
                     data.RolUserEntidad = reader.IsDBNull(18) ? "" : reader.GetString(18);

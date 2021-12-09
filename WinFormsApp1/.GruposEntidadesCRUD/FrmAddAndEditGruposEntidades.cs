@@ -14,5 +14,13 @@ namespace WinFormsApp1.GruposEntidadesCRUD
         {
             InitializeComponent();
         }
+
+        private void FrmAddAndEditGruposEntidades_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState != FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
     }
 }

@@ -162,6 +162,8 @@ namespace WinFormsApp1
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmGruposEntidades";
             this.Text = "FrmGruposEntidades";
+            this.Load += new System.EventHandler(this.FrmGruposEntidades_Load);
+            this.Resize += new System.EventHandler(this.FrmGruposEntidades_Resize);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);

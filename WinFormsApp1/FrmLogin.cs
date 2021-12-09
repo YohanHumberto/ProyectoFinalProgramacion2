@@ -1,21 +1,27 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using WinFormsLibrary1;
+using WinFormsLibrary1.Modelos;
 
 namespace WinFormsApp1
 {
     public partial class FrmLogin : Form
     {
 
-        Datos datos = new Datos();
+        Datos datos;
 
         public FrmLogin()
         {
+            string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
+            SqlConnection connection = new SqlConnection(connectionString);
+            datos = new Datos(connection);
             InitializeComponent();
         }
 
@@ -40,7 +46,25 @@ namespace WinFormsApp1
 
         private void Login()
         {
-            datos
+            Entidad entidad = datos.GetEntidadesByUserName(TbxUserNameEntidad.Text);
+
+            if (entidad != null)
+            {
+                if(TbxPasswordEntidad.Text == entidad.PassworEntidad && TbxUserNameEntidad.Text == entidad.UserNameEntidad)
+                {
+                    FrmMenúPrincipal menu = new FrmMenúPrincipal();
+                    menu.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contrasena incorrectos", "Advertencia");
+                }
+            }
+            else
+            {
+                MessageBox.Show("ERROR EN EL SERVER","Advertencia");
+            }
         }
 
         #endregion

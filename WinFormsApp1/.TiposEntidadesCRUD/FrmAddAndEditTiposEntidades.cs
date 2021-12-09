@@ -24,5 +24,13 @@ namespace WinFormsApp1.TiposEntidadesCRUD
         {
 
         }
+
+        private void FrmAddAndEditTiposEntidades_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState != FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
     }
 }

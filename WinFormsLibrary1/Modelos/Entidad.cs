@@ -12,7 +12,7 @@ namespace WinFormsLibrary1.Modelos
         public string Localidad { get; set; }
         public string TipoEntidad { get; set; }
         public string TipoDocumento { get; set; }
-        public int NumeroDocumento { get; set; }
+        public decimal NumeroDocumento { get; set; }
         public string Teléfonos { get; set; }
         public string URLPaginaWeb { get; set; }
         public string URLFacebook { get; set; }
@@ -21,7 +21,7 @@ namespace WinFormsLibrary1.Modelos
         public string URLTikTok { get; set; }
         public int IdGrupoEntidad { get; set; }
         public int IdTipoEntidad { get; set; }
-        public float LimiteCredito { get; set; }
+        public decimal LimiteCredito { get; set; }
         public string UserNameEntidad { get; set; }
         public string PassworEntidad { get; set; }
         public string RolUserEntidad { get; set; }

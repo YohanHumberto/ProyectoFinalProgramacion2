@@ -34,6 +34,46 @@ namespace WinFormsApp1.EntidadesCRUD
         {
             Regresar();
         }
+
+        private void TbxIdTipoEntidad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
         #endregion
 
         #region "Metodos Privados"
@@ -52,9 +92,12 @@ namespace WinFormsApp1.EntidadesCRUD
 
         #endregion
 
-        private void TbxIdTipoEntidad_TextChanged(object sender, EventArgs e)
+        private void FrmAddAndEditEntidades_Resize(object sender, EventArgs e)
         {
-
+            if (this.WindowState != FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
         }
     }
 }

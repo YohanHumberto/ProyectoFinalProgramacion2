@@ -14,5 +14,18 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void FrmTiposEntidades_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmTiposEntidades_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState != FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
     }
 }

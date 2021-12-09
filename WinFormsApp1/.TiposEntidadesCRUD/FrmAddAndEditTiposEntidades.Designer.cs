@@ -31,19 +31,19 @@ namespace WinFormsApp1.TiposEntidadesCRUD
         {
             this.LblTituloUser = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnRegCancelar = new System.Windows.Forms.Button();
             this.BtnRegGuardar = new System.Windows.Forms.Button();
+            this.BtnRegCancelar = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.TbxNoEliminable = new System.Windows.Forms.TextBox();
-            this.TbxStatus = new System.Windows.Forms.TextBox();
-            this.TbxIdTipoEntidad = new System.Windows.Forms.TextBox();
             this.TbxComentario = new System.Windows.Forms.TextBox();
-            this.TbxDescripcion = new System.Windows.Forms.TextBox();
+            this.TbxIdTipoEntidad = new System.Windows.Forms.TextBox();
+            this.TbxStatus = new System.Windows.Forms.TextBox();
+            this.TbxNoEliminable = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
+            this.TbxDescripcion = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -58,7 +58,7 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             this.LblTituloUser.Font = new System.Drawing.Font("Segoe UI", 24.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.LblTituloUser.Location = new System.Drawing.Point(61, 0);
             this.LblTituloUser.Name = "LblTituloUser";
-            this.LblTituloUser.Size = new System.Drawing.Size(607, 73);
+            this.LblTituloUser.Size = new System.Drawing.Size(606, 73);
             this.LblTituloUser.TabIndex = 2;
             this.LblTituloUser.Text = "Tipos Entidades";
             this.LblTituloUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -75,28 +75,28 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(607, 69);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(606, 69);
             this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // BtnRegCancelar
-            // 
-            this.BtnRegCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnRegCancelar.Location = new System.Drawing.Point(3, 37);
-            this.BtnRegCancelar.Name = "BtnRegCancelar";
-            this.BtnRegCancelar.Size = new System.Drawing.Size(601, 29);
-            this.BtnRegCancelar.TabIndex = 0;
-            this.BtnRegCancelar.Text = "Cancelar";
-            this.BtnRegCancelar.UseVisualStyleBackColor = true;
             // 
             // BtnRegGuardar
             // 
             this.BtnRegGuardar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRegGuardar.Location = new System.Drawing.Point(3, 3);
             this.BtnRegGuardar.Name = "BtnRegGuardar";
-            this.BtnRegGuardar.Size = new System.Drawing.Size(601, 28);
+            this.BtnRegGuardar.Size = new System.Drawing.Size(600, 28);
             this.BtnRegGuardar.TabIndex = 0;
             this.BtnRegGuardar.Text = "Guardar";
             this.BtnRegGuardar.UseVisualStyleBackColor = true;
+            // 
+            // BtnRegCancelar
+            // 
+            this.BtnRegCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnRegCancelar.Location = new System.Drawing.Point(3, 37);
+            this.BtnRegCancelar.Name = "BtnRegCancelar";
+            this.BtnRegCancelar.Size = new System.Drawing.Size(600, 29);
+            this.BtnRegCancelar.TabIndex = 0;
+            this.BtnRegCancelar.Text = "Cancelar";
+            this.BtnRegCancelar.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
@@ -123,88 +123,80 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(607, 380);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(606, 380);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // label14
+            // TbxComentario
             // 
-            this.label14.AutoSize = true;
-            this.label14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label14.Location = new System.Drawing.Point(186, 151);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(90, 76);
-            this.label14.TabIndex = 20;
-            this.label14.Text = "Comentario:";
+            this.TbxComentario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TbxComentario.Location = new System.Drawing.Point(282, 155);
+            this.TbxComentario.Name = "TbxComentario";
+            this.TbxComentario.Size = new System.Drawing.Size(321, 27);
+            this.TbxComentario.TabIndex = 30;
             // 
-            // label15
+            // TbxIdTipoEntidad
             // 
-            this.label15.AutoSize = true;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label15.Location = new System.Drawing.Point(224, 227);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 76);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "Status:";
+            this.TbxIdTipoEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TbxIdTipoEntidad.Location = new System.Drawing.Point(282, 79);
+            this.TbxIdTipoEntidad.Name = "TbxIdTipoEntidad";
+            this.TbxIdTipoEntidad.Size = new System.Drawing.Size(321, 27);
+            this.TbxIdTipoEntidad.TabIndex = 33;
             // 
-            // label10
+            // TbxStatus
             // 
-            this.label10.AutoSize = true;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label10.Location = new System.Drawing.Point(172, 75);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 76);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "GrupoEntidad:";
+            this.TbxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TbxStatus.Location = new System.Drawing.Point(282, 231);
+            this.TbxStatus.Name = "TbxStatus";
+            this.TbxStatus.Size = new System.Drawing.Size(321, 27);
+            this.TbxStatus.TabIndex = 28;
+            // 
+            // TbxNoEliminable
+            // 
+            this.TbxNoEliminable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TbxNoEliminable.Location = new System.Drawing.Point(282, 307);
+            this.TbxNoEliminable.Name = "TbxNoEliminable";
+            this.TbxNoEliminable.Size = new System.Drawing.Size(321, 27);
+            this.TbxNoEliminable.TabIndex = 35;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label18.Location = new System.Drawing.Point(174, 303);
+            this.label18.Location = new System.Drawing.Point(174, 304);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(102, 77);
+            this.label18.Size = new System.Drawing.Size(102, 76);
             this.label18.TabIndex = 24;
             this.label18.Text = "NoEliminable:";
             // 
-            // TbxNoEliminable
+            // label10
             // 
-            this.TbxNoEliminable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxNoEliminable.Location = new System.Drawing.Point(282, 306);
-            this.TbxNoEliminable.Name = "TbxNoEliminable";
-            this.TbxNoEliminable.Size = new System.Drawing.Size(322, 27);
-            this.TbxNoEliminable.TabIndex = 35;
+            this.label10.AutoSize = true;
+            this.label10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label10.Location = new System.Drawing.Point(172, 76);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(104, 76);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "GrupoEntidad:";
             // 
-            // TbxStatus
+            // label15
             // 
-            this.TbxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxStatus.Location = new System.Drawing.Point(282, 230);
-            this.TbxStatus.Name = "TbxStatus";
-            this.TbxStatus.Size = new System.Drawing.Size(322, 27);
-            this.TbxStatus.TabIndex = 28;
+            this.label15.AutoSize = true;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label15.Location = new System.Drawing.Point(224, 228);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(52, 76);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "Status:";
             // 
-            // TbxIdTipoEntidad
+            // label14
             // 
-            this.TbxIdTipoEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxIdTipoEntidad.Location = new System.Drawing.Point(282, 78);
-            this.TbxIdTipoEntidad.Name = "TbxIdTipoEntidad";
-            this.TbxIdTipoEntidad.Size = new System.Drawing.Size(322, 27);
-            this.TbxIdTipoEntidad.TabIndex = 33;
-            // 
-            // TbxComentario
-            // 
-            this.TbxComentario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxComentario.Location = new System.Drawing.Point(282, 154);
-            this.TbxComentario.Name = "TbxComentario";
-            this.TbxComentario.Size = new System.Drawing.Size(322, 27);
-            this.TbxComentario.TabIndex = 30;
-            // 
-            // TbxDescripcion
-            // 
-            this.TbxDescripcion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxDescripcion.Location = new System.Drawing.Point(282, 3);
-            this.TbxDescripcion.Name = "TbxDescripcion";
-            this.TbxDescripcion.Size = new System.Drawing.Size(322, 27);
-            this.TbxDescripcion.TabIndex = 3;
+            this.label14.AutoSize = true;
+            this.label14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label14.Location = new System.Drawing.Point(186, 152);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(90, 76);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "Comentario:";
             // 
             // lblLastName
             // 
@@ -212,16 +204,24 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             this.lblLastName.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblLastName.Location = new System.Drawing.Point(186, 0);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(90, 75);
+            this.lblLastName.Size = new System.Drawing.Size(90, 76);
             this.lblLastName.TabIndex = 2;
             this.lblLastName.Text = "Descripcion:";
+            // 
+            // TbxDescripcion
+            // 
+            this.TbxDescripcion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TbxDescripcion.Location = new System.Drawing.Point(282, 3);
+            this.TbxDescripcion.Name = "TbxDescripcion";
+            this.TbxDescripcion.Size = new System.Drawing.Size(321, 27);
+            this.TbxDescripcion.TabIndex = 3;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.759954F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.24004F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.LblTituloUser, 1, 0);
@@ -244,6 +244,7 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmAddAndEditTiposEntidades";
             this.Text = "FrmAddAndEditTiposEntidades";
+            this.Resize += new System.EventHandler(this.FrmAddAndEditTiposEntidades_Resize);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

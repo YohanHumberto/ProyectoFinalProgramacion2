@@ -14,5 +14,18 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void FrmGruposEntidades_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmGruposEntidades_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState != FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
     }
 }
