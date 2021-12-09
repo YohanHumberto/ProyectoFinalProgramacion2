@@ -20,3 +20,5 @@ C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFo
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.pdb
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.genruntimeconfig.cache
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.EntidadesCRUD.FrmAddAndEditEntidades.resources
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.GruposEntidadesCRUD.FrmAddAndEditGruposEntidades.resources
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.TiposEntidadesCRUD.FrmAddAndEditTiposEntidades.resources

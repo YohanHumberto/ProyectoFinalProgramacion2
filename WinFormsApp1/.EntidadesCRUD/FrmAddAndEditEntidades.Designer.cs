@@ -31,33 +31,24 @@ namespace WinFormsApp1.EntidadesCRUD
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblName = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
             this.LblUserName = new System.Windows.Forms.Label();
             this.lblContraRegis = new System.Windows.Forms.Label();
             this.lblconfimPass = new System.Windows.Forms.Label();
-            this.TbxIdEntidad = new System.Windows.Forms.TextBox();
             this.TbxDescripcion = new System.Windows.Forms.TextBox();
             this.TbxDireccion = new System.Windows.Forms.TextBox();
             this.TbxLocalidad = new System.Windows.Forms.TextBox();
-            this.TbxTipoEntidad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.TbxTeléfonos = new System.Windows.Forms.TextBox();
-            this.TbxIdGrupoEntidad = new System.Windows.Forms.TextBox();
-            this.TbxRolUserEntidad = new System.Windows.Forms.TextBox();
             this.TbxComentario = new System.Windows.Forms.TextBox();
             this.TbxURLTwitter = new System.Windows.Forms.TextBox();
-            this.TbxIdTipoEntidad = new System.Windows.Forms.TextBox();
+            this.TbxURLTikTok = new System.Windows.Forms.TextBox();
             this.TbxPassworEntidad = new System.Windows.Forms.TextBox();
-            this.TbxStatus = new System.Windows.Forms.TextBox();
-            this.TbxNoEliminable = new System.Windows.Forms.TextBox();
             this.TbxUserNameEntidad = new System.Windows.Forms.TextBox();
             this.TbxLimiteCredito = new System.Windows.Forms.TextBox();
-            this.TbxURLTikTok = new System.Windows.Forms.TextBox();
             this.TbxNumeroDocumento = new System.Windows.Forms.TextBox();
-            this.TbxTipoDocumento = new System.Windows.Forms.TextBox();
             this.TbxURLInstagram = new System.Windows.Forms.TextBox();
             this.TbxURLFacebook = new System.Windows.Forms.TextBox();
             this.TbxURLPaginaWeb = new System.Windows.Forms.TextBox();
@@ -66,19 +57,24 @@ namespace WinFormsApp1.EntidadesCRUD
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnRegGuardar = new System.Windows.Forms.Button();
             this.BtnRegCancelar = new System.Windows.Forms.Button();
             this.LblTituloUser = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.CbxTipoEntidad = new System.Windows.Forms.ComboBox();
+            this.CbxGrupoEntidad = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.CbxTipoDocumento = new System.Windows.Forms.ComboBox();
+            this.CbxRolUserEntidad = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -108,90 +104,74 @@ namespace WinFormsApp1.EntidadesCRUD
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.09524F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.90476F));
-            this.tableLayoutPanel2.Controls.Add(this.lblName, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblLastName, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.LblUserName, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lblContraRegis, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.lblconfimPass, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.TbxIdEntidad, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.TbxDescripcion, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.TbxDireccion, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.TbxLocalidad, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.TbxTipoEntidad, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.TbxTeléfonos, 1, 7);
-            this.tableLayoutPanel2.Controls.Add(this.TbxIdGrupoEntidad, 1, 13);
-            this.tableLayoutPanel2.Controls.Add(this.TbxRolUserEntidad, 1, 18);
-            this.tableLayoutPanel2.Controls.Add(this.TbxComentario, 1, 19);
-            this.tableLayoutPanel2.Controls.Add(this.TbxURLTwitter, 1, 11);
-            this.tableLayoutPanel2.Controls.Add(this.TbxIdTipoEntidad, 1, 14);
-            this.tableLayoutPanel2.Controls.Add(this.TbxPassworEntidad, 1, 17);
-            this.tableLayoutPanel2.Controls.Add(this.TbxStatus, 1, 20);
-            this.tableLayoutPanel2.Controls.Add(this.TbxNoEliminable, 1, 21);
-            this.tableLayoutPanel2.Controls.Add(this.TbxUserNameEntidad, 1, 16);
-            this.tableLayoutPanel2.Controls.Add(this.TbxLimiteCredito, 1, 15);
-            this.tableLayoutPanel2.Controls.Add(this.TbxURLTikTok, 1, 12);
-            this.tableLayoutPanel2.Controls.Add(this.TbxNumeroDocumento, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.TbxTipoDocumento, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.TbxURLInstagram, 1, 10);
-            this.tableLayoutPanel2.Controls.Add(this.TbxURLFacebook, 1, 9);
-            this.tableLayoutPanel2.Controls.Add(this.TbxURLPaginaWeb, 1, 8);
-            this.tableLayoutPanel2.Controls.Add(this.label4, 0, 8);
-            this.tableLayoutPanel2.Controls.Add(this.label11, 0, 9);
-            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 10);
-            this.tableLayoutPanel2.Controls.Add(this.label6, 0, 11);
-            this.tableLayoutPanel2.Controls.Add(this.label16, 0, 12);
-            this.tableLayoutPanel2.Controls.Add(this.label18, 0, 21);
-            this.tableLayoutPanel2.Controls.Add(this.label8, 0, 13);
-            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 14);
-            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 15);
-            this.tableLayoutPanel2.Controls.Add(this.label9, 0, 16);
-            this.tableLayoutPanel2.Controls.Add(this.label12, 0, 18);
-            this.tableLayoutPanel2.Controls.Add(this.label13, 0, 17);
-            this.tableLayoutPanel2.Controls.Add(this.label15, 0, 20);
-            this.tableLayoutPanel2.Controls.Add(this.label14, 0, 19);
+            this.tableLayoutPanel2.Controls.Add(this.lblLastName, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.LblUserName, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblContraRegis, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lblconfimPass, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.TbxDescripcion, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.TbxDireccion, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.TbxLocalidad, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.TbxTeléfonos, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.TbxComentario, 1, 18);
+            this.tableLayoutPanel2.Controls.Add(this.TbxURLTwitter, 1, 10);
+            this.tableLayoutPanel2.Controls.Add(this.TbxPassworEntidad, 1, 16);
+            this.tableLayoutPanel2.Controls.Add(this.TbxUserNameEntidad, 1, 15);
+            this.tableLayoutPanel2.Controls.Add(this.TbxLimiteCredito, 1, 14);
+            this.tableLayoutPanel2.Controls.Add(this.TbxNumeroDocumento, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.TbxURLInstagram, 1, 9);
+            this.tableLayoutPanel2.Controls.Add(this.TbxURLFacebook, 1, 8);
+            this.tableLayoutPanel2.Controls.Add(this.TbxURLPaginaWeb, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.label4, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.label11, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.label6, 0, 10);
+            this.tableLayoutPanel2.Controls.Add(this.label16, 0, 11);
+            this.tableLayoutPanel2.Controls.Add(this.label8, 0, 12);
+            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 13);
+            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 14);
+            this.tableLayoutPanel2.Controls.Add(this.label9, 0, 15);
+            this.tableLayoutPanel2.Controls.Add(this.label12, 0, 17);
+            this.tableLayoutPanel2.Controls.Add(this.label13, 0, 16);
+            this.tableLayoutPanel2.Controls.Add(this.label14, 0, 18);
+            this.tableLayoutPanel2.Controls.Add(this.checkBox2, 1, 21);
+            this.tableLayoutPanel2.Controls.Add(this.CbxGrupoEntidad, 1, 13);
+            this.tableLayoutPanel2.Controls.Add(this.comboBox3, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.CbxTipoDocumento, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.CbxRolUserEntidad, 1, 18);
+            this.tableLayoutPanel2.Controls.Add(this.TbxURLTikTok, 1, 11);
+            this.tableLayoutPanel2.Controls.Add(this.CbxTipoEntidad, 1, 14);
+            this.tableLayoutPanel2.Controls.Add(this.checkBox1, 0, 20);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(80, 75);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 22;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.545454F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowCount = 21;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761904F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(796, 664);
             this.tableLayoutPanel2.TabIndex = 0;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblName.Location = new System.Drawing.Point(287, 0);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(76, 30);
-            this.lblName.TabIndex = 2;
-            this.lblName.Text = "IdEntidad:";
             // 
             // lblLastName
             // 
@@ -233,14 +213,6 @@ namespace WinFormsApp1.EntidadesCRUD
             this.lblconfimPass.TabIndex = 2;
             this.lblconfimPass.Text = "TipoEntidad:";
             // 
-            // TbxIdEntidad
-            // 
-            this.TbxIdEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxIdEntidad.Location = new System.Drawing.Point(369, 3);
-            this.TbxIdEntidad.Name = "TbxIdEntidad";
-            this.TbxIdEntidad.Size = new System.Drawing.Size(424, 27);
-            this.TbxIdEntidad.TabIndex = 3;
-            // 
             // TbxDescripcion
             // 
             this.TbxDescripcion.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -264,14 +236,6 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxLocalidad.Name = "TbxLocalidad";
             this.TbxLocalidad.Size = new System.Drawing.Size(424, 27);
             this.TbxLocalidad.TabIndex = 3;
-            // 
-            // TbxTipoEntidad
-            // 
-            this.TbxTipoEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxTipoEntidad.Location = new System.Drawing.Point(369, 123);
-            this.TbxTipoEntidad.Name = "TbxTipoEntidad";
-            this.TbxTipoEntidad.Size = new System.Drawing.Size(424, 27);
-            this.TbxTipoEntidad.TabIndex = 3;
             // 
             // label1
             // 
@@ -311,22 +275,6 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxTeléfonos.Size = new System.Drawing.Size(424, 27);
             this.TbxTeléfonos.TabIndex = 10;
             // 
-            // TbxIdGrupoEntidad
-            // 
-            this.TbxIdGrupoEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxIdGrupoEntidad.Location = new System.Drawing.Point(369, 393);
-            this.TbxIdGrupoEntidad.Name = "TbxIdGrupoEntidad";
-            this.TbxIdGrupoEntidad.Size = new System.Drawing.Size(424, 27);
-            this.TbxIdGrupoEntidad.TabIndex = 26;
-            // 
-            // TbxRolUserEntidad
-            // 
-            this.TbxRolUserEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxRolUserEntidad.Location = new System.Drawing.Point(369, 543);
-            this.TbxRolUserEntidad.Name = "TbxRolUserEntidad";
-            this.TbxRolUserEntidad.Size = new System.Drawing.Size(424, 27);
-            this.TbxRolUserEntidad.TabIndex = 29;
-            // 
             // TbxComentario
             // 
             this.TbxComentario.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -343,13 +291,14 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxURLTwitter.Size = new System.Drawing.Size(424, 27);
             this.TbxURLTwitter.TabIndex = 32;
             // 
-            // TbxIdTipoEntidad
+            // TbxURLTikTok
             // 
-            this.TbxIdTipoEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxIdTipoEntidad.Location = new System.Drawing.Point(369, 423);
-            this.TbxIdTipoEntidad.Name = "TbxIdTipoEntidad";
-            this.TbxIdTipoEntidad.Size = new System.Drawing.Size(424, 27);
-            this.TbxIdTipoEntidad.TabIndex = 33;
+            this.TbxURLTikTok.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TbxURLTikTok.Location = new System.Drawing.Point(369, 363);
+            this.TbxURLTikTok.Name = "TbxURLTikTok";
+            this.TbxURLTikTok.Size = new System.Drawing.Size(424, 27);
+            this.TbxURLTikTok.TabIndex = 33;
+            this.TbxURLTikTok.TextChanged += new System.EventHandler(this.TbxIdTipoEntidad_TextChanged);
             // 
             // TbxPassworEntidad
             // 
@@ -358,22 +307,6 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxPassworEntidad.Name = "TbxPassworEntidad";
             this.TbxPassworEntidad.Size = new System.Drawing.Size(424, 27);
             this.TbxPassworEntidad.TabIndex = 34;
-            // 
-            // TbxStatus
-            // 
-            this.TbxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxStatus.Location = new System.Drawing.Point(369, 603);
-            this.TbxStatus.Name = "TbxStatus";
-            this.TbxStatus.Size = new System.Drawing.Size(424, 27);
-            this.TbxStatus.TabIndex = 28;
-            // 
-            // TbxNoEliminable
-            // 
-            this.TbxNoEliminable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxNoEliminable.Location = new System.Drawing.Point(369, 633);
-            this.TbxNoEliminable.Name = "TbxNoEliminable";
-            this.TbxNoEliminable.Size = new System.Drawing.Size(424, 27);
-            this.TbxNoEliminable.TabIndex = 35;
             // 
             // TbxUserNameEntidad
             // 
@@ -391,14 +324,6 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxLimiteCredito.Size = new System.Drawing.Size(424, 27);
             this.TbxLimiteCredito.TabIndex = 37;
             // 
-            // TbxURLTikTok
-            // 
-            this.TbxURLTikTok.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxURLTikTok.Location = new System.Drawing.Point(369, 363);
-            this.TbxURLTikTok.Name = "TbxURLTikTok";
-            this.TbxURLTikTok.Size = new System.Drawing.Size(424, 27);
-            this.TbxURLTikTok.TabIndex = 38;
-            // 
             // TbxNumeroDocumento
             // 
             this.TbxNumeroDocumento.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -406,14 +331,6 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxNumeroDocumento.Name = "TbxNumeroDocumento";
             this.TbxNumeroDocumento.Size = new System.Drawing.Size(424, 27);
             this.TbxNumeroDocumento.TabIndex = 40;
-            // 
-            // TbxTipoDocumento
-            // 
-            this.TbxTipoDocumento.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxTipoDocumento.Location = new System.Drawing.Point(369, 153);
-            this.TbxTipoDocumento.Name = "TbxTipoDocumento";
-            this.TbxTipoDocumento.Size = new System.Drawing.Size(424, 27);
-            this.TbxTipoDocumento.TabIndex = 41;
             // 
             // TbxURLInstagram
             // 
@@ -489,35 +406,25 @@ namespace WinFormsApp1.EntidadesCRUD
             this.label16.TabIndex = 22;
             this.label16.Text = "URLTikTok:";
             // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label18.Location = new System.Drawing.Point(261, 630);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(102, 34);
-            this.label18.TabIndex = 24;
-            this.label18.Text = "NoEliminable:";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label8.Location = new System.Drawing.Point(246, 390);
+            this.label8.Location = new System.Drawing.Point(259, 390);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(117, 30);
+            this.label8.Size = new System.Drawing.Size(104, 30);
             this.label8.TabIndex = 14;
-            this.label8.Text = "IdGrupoEntidad:";
+            this.label8.Text = "GrupoEntidad:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label10.Location = new System.Drawing.Point(257, 420);
+            this.label10.Location = new System.Drawing.Point(270, 420);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(106, 30);
+            this.label10.Size = new System.Drawing.Size(93, 30);
             this.label10.TabIndex = 16;
-            this.label10.Text = "IdTipoEntidad:";
+            this.label10.Text = "TipoEntidad:";
             // 
             // label7
             // 
@@ -559,16 +466,6 @@ namespace WinFormsApp1.EntidadesCRUD
             this.label13.TabIndex = 19;
             this.label13.Text = "PassworEntidad:";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label15.Location = new System.Drawing.Point(311, 600);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 30);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "Status:";
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -603,6 +500,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.BtnRegGuardar.TabIndex = 0;
             this.BtnRegGuardar.Text = "Guardar";
             this.BtnRegGuardar.UseVisualStyleBackColor = true;
+            this.BtnRegGuardar.Click += new System.EventHandler(this.BtnRegGuardar_Click);
             // 
             // BtnRegCancelar
             // 
@@ -613,6 +511,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.BtnRegCancelar.TabIndex = 0;
             this.BtnRegCancelar.Text = "Cancelar";
             this.BtnRegCancelar.UseVisualStyleBackColor = true;
+            this.BtnRegCancelar.Click += new System.EventHandler(this.BtnRegCancelar_Click);
             // 
             // LblTituloUser
             // 
@@ -626,6 +525,71 @@ namespace WinFormsApp1.EntidadesCRUD
             this.LblTituloUser.TabIndex = 2;
             this.LblTituloUser.Text = "Entidades";
             this.LblTituloUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(369, 603);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(101, 24);
+            this.checkBox1.TabIndex = 43;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(369, 633);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(101, 24);
+            this.checkBox2.TabIndex = 44;
+            this.checkBox2.Text = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // CbxTipoEntidad
+            // 
+            this.CbxTipoEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CbxTipoEntidad.FormattingEnabled = true;
+            this.CbxTipoEntidad.Location = new System.Drawing.Point(369, 423);
+            this.CbxTipoEntidad.Name = "CbxTipoEntidad";
+            this.CbxTipoEntidad.Size = new System.Drawing.Size(424, 28);
+            this.CbxTipoEntidad.TabIndex = 45;
+            // 
+            // CbxGrupoEntidad
+            // 
+            this.CbxGrupoEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CbxGrupoEntidad.FormattingEnabled = true;
+            this.CbxGrupoEntidad.Location = new System.Drawing.Point(369, 393);
+            this.CbxGrupoEntidad.Name = "CbxGrupoEntidad";
+            this.CbxGrupoEntidad.Size = new System.Drawing.Size(424, 28);
+            this.CbxGrupoEntidad.TabIndex = 46;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(369, 123);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(424, 28);
+            this.comboBox3.TabIndex = 47;
+            // 
+            // CbxTipoDocumento
+            // 
+            this.CbxTipoDocumento.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CbxTipoDocumento.FormattingEnabled = true;
+            this.CbxTipoDocumento.Location = new System.Drawing.Point(369, 153);
+            this.CbxTipoDocumento.Name = "CbxTipoDocumento";
+            this.CbxTipoDocumento.Size = new System.Drawing.Size(424, 28);
+            this.CbxTipoDocumento.TabIndex = 48;
+            // 
+            // CbxRolUserEntidad
+            // 
+            this.CbxRolUserEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CbxRolUserEntidad.FormattingEnabled = true;
+            this.CbxRolUserEntidad.Location = new System.Drawing.Point(369, 543);
+            this.CbxRolUserEntidad.Name = "CbxRolUserEntidad";
+            this.CbxRolUserEntidad.Size = new System.Drawing.Size(424, 28);
+            this.CbxRolUserEntidad.TabIndex = 49;
             // 
             // FrmAddAndEditEntidades
             // 
@@ -649,16 +613,13 @@ namespace WinFormsApp1.EntidadesCRUD
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Label LblUserName;
         private System.Windows.Forms.Label lblContraRegis;
         private System.Windows.Forms.Label lblconfimPass;
-        private System.Windows.Forms.TextBox TbxIdEntidad;
         private System.Windows.Forms.TextBox TbxDescripcion;
         private System.Windows.Forms.TextBox TbxDireccion;
         private System.Windows.Forms.TextBox TbxLocalidad;
-        private System.Windows.Forms.TextBox TbxTipoEntidad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -674,27 +635,26 @@ namespace WinFormsApp1.EntidadesCRUD
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button BtnRegGuardar;
         private System.Windows.Forms.Button BtnRegCancelar;
         private System.Windows.Forms.Label LblTituloUser;
-        private System.Windows.Forms.TextBox TbxIdGrupoEntidad;
-        private System.Windows.Forms.TextBox TbxRolUserEntidad;
         private System.Windows.Forms.TextBox TbxComentario;
         private System.Windows.Forms.TextBox TbxURLTwitter;
-        private System.Windows.Forms.TextBox TbxIdTipoEntidad;
+        private System.Windows.Forms.TextBox TbxURLTikTok;
         private System.Windows.Forms.TextBox TbxPassworEntidad;
-        private System.Windows.Forms.TextBox TbxStatus;
-        private System.Windows.Forms.TextBox TbxNoEliminable;
         private System.Windows.Forms.TextBox TbxUserNameEntidad;
         private System.Windows.Forms.TextBox TbxLimiteCredito;
-        private System.Windows.Forms.TextBox TbxURLTikTok;
         private System.Windows.Forms.TextBox TbxNumeroDocumento;
-        private System.Windows.Forms.TextBox TbxTipoDocumento;
         private System.Windows.Forms.TextBox TbxURLInstagram;
         private System.Windows.Forms.TextBox TbxURLFacebook;
         private System.Windows.Forms.TextBox TbxURLPaginaWeb;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.ComboBox CbxTipoEntidad;
+        private System.Windows.Forms.ComboBox CbxGrupoEntidad;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox CbxTipoDocumento;
+        private System.Windows.Forms.ComboBox CbxRolUserEntidad;
     }
 }

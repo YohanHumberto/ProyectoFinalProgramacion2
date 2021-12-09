@@ -7,7 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WinFormsLibrary1\WinFormsLibrary1.csproj" />
+    <Compile Include=".EntidadesCRUD\FrmAddAndEditEntidades.cs" />
+    <Compile Include=".EntidadesCRUD\FrmAddAndEditEntidades.Designer.cs" />
+    <Compile Include=".EntidadesCRUD\FrmEntidades.cs" />
+    <Compile Include=".EntidadesCRUD\FrmEntidades.Designer.cs" />
+    <Compile Include=".GruposEntidadesCRUD\FrmAddAndEditGruposEntidades.cs" />
+    <Compile Include=".GruposEntidadesCRUD\FrmAddAndEditGruposEntidades.Designer.cs" />
+    <Compile Include=".GruposEntidadesCRUD\FrmGruposEntidades.cs" />
+    <Compile Include=".GruposEntidadesCRUD\FrmGruposEntidades.Designer.cs" />
+    <Compile Include=".TiposEntidadesCRUD\FrmAddAndEditTiposEntidades.cs" />
+    <Compile Include=".TiposEntidadesCRUD\FrmAddAndEditTiposEntidades.Designer.cs" />
+    <Compile Include=".TiposEntidadesCRUD\FrmTiposEntidades.cs" />
+    <Compile Include=".TiposEntidadesCRUD\FrmTiposEntidades.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include=".EntidadesCRUD\FrmAddAndEditEntidades.resx" />
+    <EmbeddedResource Include=".EntidadesCRUD\FrmEntidades.resx" />
+    <EmbeddedResource Include=".GruposEntidadesCRUD\FrmAddAndEditGruposEntidades.resx" />
+    <EmbeddedResource Include=".GruposEntidadesCRUD\FrmGruposEntidades.resx" />
+    <EmbeddedResource Include=".TiposEntidadesCRUD\FrmAddAndEditTiposEntidades.resx" />
+    <EmbeddedResource Include=".TiposEntidadesCRUD\FrmTiposEntidades.resx" />
   </ItemGroup>
 
   <ItemGroup>
