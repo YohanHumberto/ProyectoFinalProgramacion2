@@ -32,3 +32,37 @@ C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFo
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsLibrary1.pdb
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.CopyComplete
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.dll.config
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.exe
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.dll.config
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.deps.json
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.runtimeconfig.json
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.runtimeconfig.dev.json
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.dll
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.pdb
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsLibrary1.dll
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsLibrary1.pdb
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmLogin.resources
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmMenúPrincipal.resources
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmWelcome.resources
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Properties.Resources.resources
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.EntidadesCRUD.FrmAddAndEditEntidades.resources
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmEntidades.resources
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.GruposEntidadesCRUD.FrmAddAndEditGruposEntidades.resources
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmGruposEntidades.resources
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.TiposEntidadesCRUD.FrmAddAndEditTiposEntidades.resources
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmTiposEntidades.resources
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.AssemblyInfo.cs
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.CopyComplete
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.dll
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.pdb
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.genruntimeconfig.cache

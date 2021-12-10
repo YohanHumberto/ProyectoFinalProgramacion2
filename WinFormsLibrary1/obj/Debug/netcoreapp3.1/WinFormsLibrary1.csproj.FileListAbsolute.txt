@@ -7,3 +7,12 @@ C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFo
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.dll
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.pdb
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\bin\Debug\netcoreapp3.1\WinFormsLibrary1.deps.json
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\bin\Debug\netcoreapp3.1\WinFormsLibrary1.dll
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\bin\Debug\netcoreapp3.1\WinFormsLibrary1.pdb
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.csproj.AssemblyReference.cache
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.AssemblyInfoInputs.cache
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.AssemblyInfo.cs
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.dll
+C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.pdb

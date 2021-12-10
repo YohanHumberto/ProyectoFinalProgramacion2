@@ -400,5 +400,9 @@ namespace WinFormsApp1.EntidadesCRUD
 
         #endregion
 
+        private void CbxEstado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
