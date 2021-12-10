@@ -186,9 +186,10 @@ namespace WinFormsApp1
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(3, 22);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(558, 27);
+            this.textBox1.Size = new System.Drawing.Size(558, 34);
             this.textBox1.TabIndex = 0;
             // 
             // button1

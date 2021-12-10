@@ -305,7 +305,7 @@ namespace WinFormsApp1
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(3, 21);
+            this.textBox1.Location = new System.Drawing.Point(3, 22);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(559, 27);
             this.textBox1.TabIndex = 0;
@@ -313,7 +313,7 @@ namespace WinFormsApp1
             // button6
             // 
             this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.Location = new System.Drawing.Point(568, 21);
+            this.button6.Location = new System.Drawing.Point(568, 22);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(141, 29);
             this.button6.TabIndex = 1;

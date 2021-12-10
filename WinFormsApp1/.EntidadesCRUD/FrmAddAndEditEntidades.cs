@@ -17,14 +17,14 @@ namespace WinFormsApp1.EntidadesCRUD
     {
 
         bool EditIsActive;
-        int Index;
+        int Id;
         Datos datos;
 
-        public FrmAddAndEditEntidades(bool editIsActive, int Index)
+        public FrmAddAndEditEntidades(bool editIsActive, int Id)
         {
             InitializeComponent();
             this.EditIsActive = editIsActive;
-            this.Index = Index;
+            this.Id = Id;
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             SqlConnection connection = new SqlConnection(connectionString);
             datos = new Datos(connection);
@@ -87,6 +87,7 @@ namespace WinFormsApp1.EntidadesCRUD
 
         }
 
+
         private void FrmAddAndEditEntidades_Resize(object sender, EventArgs e)
         {
             if (this.WindowState != FormWindowState.Maximized)
@@ -115,124 +116,138 @@ namespace WinFormsApp1.EntidadesCRUD
                     Text = "Seleccione una Opccion",
                     Value = -1,
                 };
+            //Física o Jurídica
+            ComboBoxItem OptFísica = new ComboBoxItem
+            {
+                Text = "Física",
+                Value = 1,
+            };
+            ComboBoxItem OptJurídica = new ComboBoxItem
+            {
+                Text = "Jurídica",
+                Value = 2,
+            };
+
+            // RNC, Cédula, y Pasaporte
+            ComboBoxItem OptRNC = new ComboBoxItem
+            {
+                Text = "RNC",
+                Value = 1,
+            };
+            ComboBoxItem OptCédula = new ComboBoxItem
+            {
+                Text = "Cédula",
+                Value = 2,
+            };
+            ComboBoxItem OptPasaporte = new ComboBoxItem
+            {
+                Text = "Pasaporte",
+                Value = 3,
+            };
+
+            //Admin, Supervisor, User
+            ComboBoxItem OptAdmin = new ComboBoxItem
+            {
+                Text = "Admin",
+                Value = 1,
+            };
+            ComboBoxItem OptSupervisor = new ComboBoxItem
+            {
+                Text = "Supervisor",
+                Value = 2,
+            };
+            ComboBoxItem OptUser = new ComboBoxItem
+            {
+                Text = "User",
+                Value = 3,
+            };
+
+            //Activa Innactiva
+            ComboBoxItem OptActiva = new ComboBoxItem
+            {
+                Text = "Activa",
+                Value = 1,
+            };
+            ComboBoxItem OptInactiva = new ComboBoxItem
+            {
+                Text = "Inactiva",
+                Value = 0,
+            };
+
+            CbxTipoEntidad.Items.Add(OptFísica);
+            CbxTipoEntidad.Items.Add(OptJurídica);
+
+            CbxTipoDocumento.Items.Add(OptRNC);
+            CbxTipoDocumento.Items.Add(OptCédula);
+            CbxTipoDocumento.Items.Add(OptPasaporte);
+
+            CbxRolUserEntidad.Items.Add(OptAdmin);
+            CbxRolUserEntidad.Items.Add(OptSupervisor);
+            CbxRolUserEntidad.Items.Add(OptUser);
+
+            CbxEstado.Items.Add(OptActiva);
+            CbxEstado.Items.Add(OptInactiva);
 
             if (EditIsActive == false)
             {
-
-                //Física o Jurídica
-                ComboBoxItem OptFísica = new ComboBoxItem
-                {
-                    Text = "Física",
-                    Value = 1,
-                };
-                ComboBoxItem OptJurídica = new ComboBoxItem
-                {
-                    Text = "Jurídica",
-                    Value = 2,
-                };
-
-                // RNC, Cédula, y Pasaporte
-                ComboBoxItem OptRNC = new ComboBoxItem
-                {
-                    Text = "RNC",
-                    Value = 1,
-                };
-                ComboBoxItem OptCédula = new ComboBoxItem
-                {
-                    Text = "Cédula",
-                    Value = 2,
-                };
-                ComboBoxItem OptPasaporte = new ComboBoxItem
-                {
-                    Text = "Pasaporte",
-                    Value = 3,
-                };
-
-                //Admin, Supervisor, User
-                ComboBoxItem OptAdmin = new ComboBoxItem
-                {
-                    Text = "Admin",
-                    Value = 1,
-                };
-                ComboBoxItem OptSupervisor = new ComboBoxItem
-                {
-                    Text = "Supervisor",
-                    Value = 2,
-                };
-                ComboBoxItem OptUser = new ComboBoxItem
-                {
-                    Text = "User",
-                    Value = 3,
-                };
-
-                //Activa Innactiva
-                ComboBoxItem OptActiva = new ComboBoxItem
-                {
-                    Text = "Activa",
-                    Value = 1,
-                };
-                ComboBoxItem OptInactiva = new ComboBoxItem
-                {
-                    Text = "Inactiva",
-                    Value = 0,
-                };
-
-                CbxTipoEntidad.Items.Add(OptDefault);
-                CbxTipoEntidad.Items.Add(OptFísica);
-                CbxTipoEntidad.Items.Add(OptJurídica);
-                CbxTipoEntidad.SelectedItem = OptDefault;
-
-                CbxTipoDocumento.Items.Add(OptDefault);
-                CbxTipoDocumento.Items.Add(OptRNC);
-                CbxTipoDocumento.Items.Add(OptCédula);
-                CbxTipoDocumento.Items.Add(OptPasaporte);
-                CbxTipoDocumento.SelectedItem = OptDefault;
-
-                CbxRolUserEntidad.Items.Add(OptDefault);
-                CbxRolUserEntidad.Items.Add(OptAdmin);
-                CbxRolUserEntidad.Items.Add(OptSupervisor);
-                CbxRolUserEntidad.Items.Add(OptUser);
-                CbxRolUserEntidad.SelectedItem = OptDefault;
-
-                CbxEstado.Items.Add(OptDefault);
-                CbxEstado.Items.Add(OptActiva);
-                CbxEstado.Items.Add(OptInactiva);
-                CbxEstado.SelectedItem = OptDefault;
-
-
+                CbxTipoEntidad.SelectedItem = OptJurídica;
+                CbxTipoDocumento.SelectedItem = OptRNC;
+                CbxRolUserEntidad.SelectedItem = OptUser;
+                CbxEstado.SelectedItem = OptActiva;
 
                 LoadGruposEntidadComboBox();
-                LoadTipoEntidadComboBox();
-
             }
             else if(EditIsActive == true)
             {
-                List<ComboBoxItem> listComboboxGE = new List<ComboBoxItem>();
 
-                List<GruposEntidad> ListGruposEntidads = datos.GetListGruposEntidades();
+                Entidad entidad = datos.GetEntidadesById(Id);
 
-                if (ListGruposEntidads == null)
+
+                for (int i = 0; i < CbxTipoEntidad.Items.Count; i++)
                 {
-                    MessageBox.Show("IS null GetListGruposEntidades", "ALERT");
-                }
-                else
-                {
-                    foreach (GruposEntidad item in ListGruposEntidads)
-                    {
-                        listComboboxGE.Add(new ComboBoxItem
-                        {
-                           Text = item.Descripcion,
-                           Value = item.IdGrupoEntidad,
-                        });
-                    }
+                    ComboBoxItem item = CbxTipoEntidad.Items[i] as ComboBoxItem;
 
-                    foreach (ComboBoxItem item in listComboboxGE)
+                    if (item.Text == entidad.TipoEntidad)
                     {
-                        CbxIdGrupoEntidad.Items.Add(item);
+                        CbxTipoEntidad.SelectedItem = item;
                     }
-                    CbxIdGrupoEntidad.Items.Add(OptDefault);
-                    CbxIdGrupoEntidad.SelectedItem = OptDefault;
                 }
+
+
+                for (int i = 0; i < CbxTipoDocumento.Items.Count; i++)
+                {
+                    ComboBoxItem item = CbxTipoDocumento.Items[i] as ComboBoxItem;
+
+                    if (item.Text == entidad.TipoDocumento)
+                    {
+                        CbxTipoDocumento.SelectedItem = item;
+                    }
+                }
+
+                for (int i = 0; i < CbxRolUserEntidad.Items.Count; i++)
+                {
+                    ComboBoxItem item = CbxRolUserEntidad.Items[i] as ComboBoxItem;
+
+                    if (item.Text == entidad.RolUserEntidad)
+                    {
+                        CbxRolUserEntidad.SelectedItem = item;
+                    }
+                }
+
+                for (int i = 0; i < CbxEstado.Items.Count; i++)
+                {
+                    ComboBoxItem item = CbxEstado.Items[i] as ComboBoxItem;
+
+                    if (item.Text == entidad.Status)
+                    {
+                        CbxEstado.SelectedItem = item;
+                    }
+                }
+
+
+        
+                LoadGruposEntidadComboBox();
+                LoadTipoEntidadComboBox();
 
             }
 
@@ -395,7 +410,11 @@ namespace WinFormsApp1.EntidadesCRUD
 
         private void Regresar()
         {
-
+            FrmEntidades Frm = new FrmEntidades();
+            Frm.WindowState = FormWindowState.Maximized;
+            Frm.MdiParent = FrmMenúPrincipal.instancia;
+            Frm.Show();
+            this.Close();
         }
 
         #endregion

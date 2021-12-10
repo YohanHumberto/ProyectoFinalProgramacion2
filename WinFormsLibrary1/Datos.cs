@@ -64,7 +64,9 @@ namespace WinFormsLibrary1
                 return data;
 
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
 
                 return null;
@@ -81,7 +83,7 @@ namespace WinFormsLibrary1
             {
                 connection.Open();
 
-                SqlCommand command = new SqlCommand("select * from Entidades where Id = @id", connection);
+                SqlCommand command = new SqlCommand("select * from Entidades where IdEntidad = @id", connection);
 
                 command.Parameters.AddWithValue("@id", id);
 
@@ -123,7 +125,9 @@ namespace WinFormsLibrary1
 
 
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
 
                 return null;
@@ -162,7 +166,9 @@ namespace WinFormsLibrary1
 
 
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
 
                 return null;
@@ -202,7 +208,9 @@ namespace WinFormsLibrary1
 
 
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
 
                 return null;
@@ -262,7 +270,9 @@ namespace WinFormsLibrary1
                 return list;
 
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
                 return null;
             }
@@ -300,7 +310,9 @@ namespace WinFormsLibrary1
                 return list;
 
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
                 return null;
             }
@@ -340,7 +352,9 @@ namespace WinFormsLibrary1
                 return list;
 
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
                 return null;
             }
@@ -354,7 +368,9 @@ namespace WinFormsLibrary1
                 SqlDataAdapter query = new SqlDataAdapter("Select * from Entidades", connection);
                 return LoadData(query);
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
                 return null;
             }
@@ -367,7 +383,9 @@ namespace WinFormsLibrary1
                 SqlDataAdapter query = new SqlDataAdapter("Select * from GruposEntidades", connection);
                 return LoadData(query);
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
                 return null;
             }
@@ -380,19 +398,75 @@ namespace WinFormsLibrary1
                 SqlDataAdapter query = new SqlDataAdapter("Select * from TiposEntidades", connection);
                 return LoadData(query);
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
                 return null;
             }
         }
 
+        //GETALLByDescription type DataTable 
+        //Estos metodos seran utilizados para hacer busquedas en los distintos CRUD
 
+        public DataTable GetAllByDescriptionEntidades(string desccription)
+        {
+            try
+            {
+                string sqlquery = "SELECT * FROM Entidades WHERE Descripcion = @desccription OR Descripcion LIKE  @desccription + '%'";
+                SqlDataAdapter query = new SqlDataAdapter(sqlquery, connection);
+                query.SelectCommand.Parameters.AddWithValue("@desccription", desccription);
+                
+                return LoadData(query);
+            }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
+            catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
+            {
+                return null;
+            }
+        }
+
+        public DataTable GetAllByDescriptionGruposEntidades(string desccription)
+        {
+            try
+            {
+                string sqlquery = "SELECT * FROM GruposEntidades WHERE Descripcion = @desccription OR Descripcion LIKE  @desccription + '%'";
+                SqlDataAdapter query = new SqlDataAdapter(sqlquery, connection);
+                query.SelectCommand.Parameters.AddWithValue("@desccription", desccription);
+              
+                return LoadData(query);
+            }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
+            catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
+            {
+                return null;
+            }
+        }
+
+        public DataTable GetAllByDescriptionTiposEntidades(string desccription)
+        {
+            try
+            {
+                string sqlquery = "SELECT * FROM TiposEntidades WHERE Descripcion = @desccription OR Descripcion LIKE  @desccription + '%'";
+                SqlDataAdapter query = new SqlDataAdapter(sqlquery, connection);
+                query.SelectCommand.Parameters.AddWithValue("@desccription", desccription);
+                return LoadData(query);
+            }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
+            catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
+            {
+                return null;
+            }
+        }
 
         //ADD
         public bool AddEntidad(Entidad entidad)
         {
 
-            SqlCommand command = new SqlCommand("INSERT INTO Entidades(Descripcion,Direccion, Localidad, TipoEntidad,TipoDocumento,NumeroDocumento,Teléfonos,URLPaginaWeb,URLFacebook,URLInstagram,URLTwitter,URLTikTok,IdGrupoEntidad,IdTipoEntidad,LimiteCredito,UserNameEntidad,PassworEntidad,RolUserEntidad,Comentario,Statu,NoEliminable ) values(@Descripcion,@Direccion,@Localidad,@TipoEntidad,@NumeroDocumento,@Teléfonos,@URLPaginaWeb,@URLFacebook,@URLInstagram,@URLTwitter,@URLTikTok,@IdGrupoEntidad,@IdTipoEntidad,@LimiteCredito,@UserNameEntidad,@PassworEntidad,@RolUserEntidad,@Comentario,@Status,@NoEliminable)", connection);
+            SqlCommand command = new SqlCommand("INSERT INTO Entidades(Descripcion,Direccion, Localidad, TipoEntidad,TipoDocumento,NumeroDocumento,Teléfonos,URLPaginaWeb,URLFacebook,URLInstagram,URLTwitter,URLTikTok,IdGrupoEntidad,IdTipoEntidad,LimiteCredito,UserNameEntidad,PassworEntidad,RolUserEntidad,Comentario,Statu,NoEliminable ) values(@Descripcion,@Direccion,@Localidad,@TipoEntidad,@TipoDocumento,@NumeroDocumento,@Teléfonos,@URLPaginaWeb,@URLFacebook,@URLInstagram,@URLTwitter,@URLTikTok,@IdGrupoEntidad,@IdTipoEntidad,@LimiteCredito,@UserNameEntidad,@PassworEntidad,@RolUserEntidad,@Comentario,@Status,@NoEliminable)", connection);
 
             command.Parameters.AddWithValue("@Descripcion", entidad.Descripcion);
             command.Parameters.AddWithValue("@Direccion", entidad.Direccion);
@@ -548,7 +622,9 @@ namespace WinFormsLibrary1
                 connection.Close();
                 return data;
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
                 return null;
             }
@@ -564,7 +640,9 @@ namespace WinFormsLibrary1
                 connection.Close();
                 return true;
             }
+#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             catch (Exception e)
+#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
             {
                 return false;
             }

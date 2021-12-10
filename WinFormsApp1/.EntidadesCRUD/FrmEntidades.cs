@@ -64,7 +64,9 @@ namespace WinFormsApp1
                 IndexDB = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
                 ActivarBotones();
             }
+#pragma warning disable CS0168 // La variable 'E' se ha declarado pero nunca se usa
             catch (Exception E)
+#pragma warning restore CS0168 // La variable 'E' se ha declarado pero nunca se usa
             {
                 MessageBox.Show("ERROR", "Notificacion");
             }
@@ -76,6 +78,7 @@ namespace WinFormsApp1
 
         private void LoadData()
         {
+            dataGridView1.ClearSelection();
             dataGridView1.DataSource = datos.GetAllEntidades();
         }
 
@@ -87,9 +90,7 @@ namespace WinFormsApp1
 
         private void Agregar()
         {
-            FrmAddAndEditEntidades Frm = new FrmAddAndEditEntidades(false, -1);
-            Frm.MdiParent = FrmMenúPrincipal.instancia;
-            Frm.Show();
+            FrmMenúPrincipal.instancia.AbrirFrmAddAndEditEntidades(false, -1);
             this.Close();
         }
 
@@ -97,9 +98,7 @@ namespace WinFormsApp1
         {
             if (IndexDB != -1)
             {
-                FrmAddAndEditEntidades Frm = new FrmAddAndEditEntidades(true, IndexDB);
-                Frm.MdiParent = FrmMenúPrincipal.instancia;
-                Frm.Show();
+                FrmMenúPrincipal.instancia.AbrirFrmAddAndEditEntidades(true, IndexDB);
                 this.Close();
             }
             else
@@ -112,7 +111,16 @@ namespace WinFormsApp1
         {
             if(IndexDB != -1)
             {
-               datos.DeleteEntidad(IndexDB);
+              bool res =  datos.DeleteEntidad(IndexDB);
+              if(res == true)
+              {
+                    MessageBox.Show("Entidad Eliminada conexito", "NOTIFICACION");
+                    LoadData();
+              }
+              else
+              {
+                    MessageBox.Show("Error no se pudo eliminar la entidad", "ADVERTENCIA");
+              }
             }
             else
             {

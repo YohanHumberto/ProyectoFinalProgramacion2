@@ -1,7 +1,6 @@
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsLibrary1\bin\Debug\netcoreapp3.1\WinFormsLibrary1.deps.json
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsLibrary1\bin\Debug\netcoreapp3.1\WinFormsLibrary1.dll
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsLibrary1\bin\Debug\netcoreapp3.1\WinFormsLibrary1.pdb
-C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.csproj.AssemblyReference.cache
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.AssemblyInfoInputs.cache
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.AssemblyInfo.cs
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.csproj.CoreCompileInputs.cache
