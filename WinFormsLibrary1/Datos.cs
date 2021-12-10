@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using WinFormsLibrary1.Modelos;
@@ -210,7 +211,142 @@ namespace WinFormsLibrary1
         }
 
 
-        //GETALL
+        //GTLIST
+
+        public List<Entidad> GetListEntidades()
+        {
+            try
+            {
+                List<Entidad> list = new List<Entidad>();
+
+                connection.Open();
+
+                SqlCommand command = new SqlCommand("Select * from Entidades", connection);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    list.Add(new Entidad
+                    {
+                        IdEntidad = reader.IsDBNull(0) ? 0 : reader.GetInt32(0),
+                        Descripcion = reader.IsDBNull(1) ? "" : reader.GetString(1),
+                        Direccion = reader.IsDBNull(2) ? "" : reader.GetString(2),
+                        Localidad = reader.IsDBNull(3) ? "" : reader.GetString(3),
+                        TipoEntidad = reader.IsDBNull(4) ? "" : reader.GetString(4),
+                        TipoDocumento = reader.IsDBNull(5) ? "" : reader.GetString(5),
+                        NumeroDocumento = reader.IsDBNull(6) ? 0 : reader.GetDecimal(6),
+                        Teléfonos = reader.IsDBNull(7) ? "" : reader.GetString(7),
+                        URLPaginaWeb = reader.IsDBNull(8) ? "" : reader.GetString(8),
+                        URLFacebook = reader.IsDBNull(9) ? "" : reader.GetString(9),
+                        URLInstagram = reader.IsDBNull(10) ? "" : reader.GetString(10),
+                        URLTwitter = reader.IsDBNull(11) ? "" : reader.GetString(11),
+                        URLTikTok = reader.IsDBNull(12) ? "" : reader.GetString(12),
+                        IdGrupoEntidad = reader.IsDBNull(13) ? 0 : reader.GetInt32(13),
+                        IdTipoEntidad = reader.IsDBNull(14) ? 0 : reader.GetInt32(14),
+                        LimiteCredito = reader.IsDBNull(15) ? 0 : reader.GetDecimal(15),
+                        UserNameEntidad = reader.IsDBNull(16) ? "" : reader.GetString(16),
+                        PassworEntidad = reader.IsDBNull(17) ? "" : reader.GetString(17),
+                        RolUserEntidad = reader.IsDBNull(18) ? "" : reader.GetString(18),
+                        Comentario = reader.IsDBNull(19) ? "" : reader.GetString(19),
+                        Status = reader.IsDBNull(20) ? "" : reader.GetString(20),
+                        NoEliminable = reader.IsDBNull(21) ? new Boolean() : reader.GetBoolean(21),
+                    });
+                }
+
+                reader.Close();
+                reader.Dispose();
+
+                connection.Close();
+
+                return list;
+
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        public List<GruposEntidad> GetListGruposEntidades()
+        {
+            try
+            {
+                List<GruposEntidad> list = new List<GruposEntidad>();
+
+                connection.Open();
+
+                SqlCommand command = new SqlCommand("Select * from GruposEntidades", connection);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    list.Add(new GruposEntidad
+                    {
+                        IdGrupoEntidad = reader.IsDBNull(0) ? 0 : reader.GetInt32(0),
+                        Descripcion = reader.IsDBNull(1) ? "" : reader.GetString(1),
+                        Comentario = reader.IsDBNull(2) ? "" : reader.GetString(2),
+                        Status = reader.IsDBNull(3) ? "" : reader.GetString(3),
+                        NoEliminable = reader.IsDBNull(4) ? new Boolean() : reader.GetBoolean(4),
+                    });
+                }
+
+                reader.Close();
+                reader.Dispose();
+
+                connection.Close();
+
+                return list;
+
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        public List<TiposEntidad> GetListTiposEntidades(int IdGrupoEntidad)
+        {
+            try
+            {
+                List<TiposEntidad> list = new List<TiposEntidad>();
+
+                connection.Open();
+
+                SqlCommand command = new SqlCommand("Select * from TiposEntidades WHERE IdGrupoEntidad = @IdGrupoEntidad", connection);
+                command.Parameters.AddWithValue("@IdGrupoEntidad", IdGrupoEntidad);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    list.Add(new TiposEntidad
+                    {
+                        IdTipoEntidad = reader.IsDBNull(0) ? 0 : reader.GetInt32(0),
+                        IdGrupoEntidad = reader.IsDBNull(1) ? 0 : reader.GetInt32(1),
+                        Descripcion = reader.IsDBNull(2) ? "" : reader.GetString(2),
+                        Comentario = reader.IsDBNull(3) ? "" : reader.GetString(3),
+                        Status = reader.IsDBNull(4) ? "" : reader.GetString(4),
+                        NoEliminable = reader.IsDBNull(5) ? new Boolean() : reader.GetBoolean(5),
+                    });
+                }
+
+                reader.Close();
+                reader.Dispose();
+
+                connection.Close();
+
+                return list;
+
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        //GETALL type DataTable
         public DataTable GetAllEntidades()
         {
             try
@@ -256,7 +392,7 @@ namespace WinFormsLibrary1
         public bool AddEntidad(Entidad entidad)
         {
 
-            SqlCommand command = new SqlCommand("INSERT INTO Entidades(Descripcion,Direccion, Localidad, TipoEntidad,TipoDocumento,NumeroDocumento,Teléfonos,URLPaginaWeb,URLFacebook,URLInstagram,URLTwitter,URLTikTok,IdGrupoEntidad,IdTipoEntidad,LimiteCredito,UserNameEntidad,PassworEntidad,RolUserEntidad,Comentario,Status,NoEliminable ) values(@Descripcion,@Direccion,@Localidad,@TipoEntidad,@NumeroDocumento,@Teléfonos,@URLPaginaWeb,@URLFacebook,@URLInstagram,@URLTwitter,@URLTikTok,@IdGrupoEntidad,@IdTipoEntidad,@LimiteCredito,@UserNameEntidad,@PassworEntidad,@RolUserEntidad,@Comentario,@Status,@NoEliminable)", connection);
+            SqlCommand command = new SqlCommand("INSERT INTO Entidades(Descripcion,Direccion, Localidad, TipoEntidad,TipoDocumento,NumeroDocumento,Teléfonos,URLPaginaWeb,URLFacebook,URLInstagram,URLTwitter,URLTikTok,IdGrupoEntidad,IdTipoEntidad,LimiteCredito,UserNameEntidad,PassworEntidad,RolUserEntidad,Comentario,Statu,NoEliminable ) values(@Descripcion,@Direccion,@Localidad,@TipoEntidad,@NumeroDocumento,@Teléfonos,@URLPaginaWeb,@URLFacebook,@URLInstagram,@URLTwitter,@URLTikTok,@IdGrupoEntidad,@IdTipoEntidad,@LimiteCredito,@UserNameEntidad,@PassworEntidad,@RolUserEntidad,@Comentario,@Status,@NoEliminable)", connection);
 
             command.Parameters.AddWithValue("@Descripcion", entidad.Descripcion);
             command.Parameters.AddWithValue("@Direccion", entidad.Direccion);

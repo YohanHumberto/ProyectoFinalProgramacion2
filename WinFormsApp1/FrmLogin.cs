@@ -52,7 +52,7 @@ namespace WinFormsApp1
             {
                 if(TbxPasswordEntidad.Text == entidad.PassworEntidad && TbxUserNameEntidad.Text == entidad.UserNameEntidad)
                 {
-                    FrmMenúPrincipal menu = new FrmMenúPrincipal();
+                    FrmMenúPrincipal menu = FrmMenúPrincipal.instancia;
                     menu.Show();
                     this.Close();
                 }

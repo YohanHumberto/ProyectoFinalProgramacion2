@@ -10,7 +10,10 @@ namespace WinFormsApp1
 {
     public partial class FrmMenúPrincipal : Form
     {
-        public FrmMenúPrincipal()
+
+        public static FrmMenúPrincipal instancia = new FrmMenúPrincipal();
+
+        private FrmMenúPrincipal()
         {
             InitializeComponent();
         }
