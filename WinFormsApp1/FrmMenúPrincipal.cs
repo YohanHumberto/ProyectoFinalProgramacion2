@@ -39,12 +39,12 @@ namespace WinFormsApp1
 
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            MostrarFrmAcercaDe();
         }
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            MostrarLogin();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -80,10 +80,26 @@ namespace WinFormsApp1
             Frm.Show();
         }
 
+        private void MostrarFrmAcercaDe()
+        {
+            FrmAcercaDe Frm = new FrmAcercaDe();
+            Frm.MdiParent = this;
+            Frm.WindowState = FormWindowState.Maximized;
+            Frm.Show();
+        }
+
+        private void MostrarLogin()
+        {
+            FrmLogin frm = new FrmLogin();
+            frm.Show();
+            this.Hide();
+        }
+
         private void Salir()
         {
             Application.Exit();
         }
+
 
         #endregion
 

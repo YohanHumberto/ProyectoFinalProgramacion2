@@ -13,6 +13,9 @@
     <Compile Update=".GruposEntidadesCRUD\FrmGruposEntidades.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>

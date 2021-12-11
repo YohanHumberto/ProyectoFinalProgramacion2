@@ -40,7 +40,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
 
         private void BtnRegGuardar_Click(object sender, EventArgs e)
         {
-            ProcesarForm();
+           // ProcesarForm();
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
@@ -77,13 +77,13 @@ namespace WinFormsApp1.GruposEntidadesCRUD
                 Value = 0,
             };
 
-            CbxEstado.Items.Add(OptDefault);
+            /*CbxEstado.Items.Add(OptDefault);
             CbxEstado.Items.Add(OptActiva);
             CbxEstado.Items.Add(OptInactiva);
-            CbxEstado.SelectedItem = OptDefault;
+            CbxEstado.SelectedItem = OptDefault;*/
         }
 
-        private void ProcesarForm()
+        /*private void ProcesarForm()
         {
             ComboBoxItem selectedItemEstado = CbxEstado.SelectedItem as ComboBoxItem;
             if (string.IsNullOrEmpty(TbxDescripcion.Text) || string.IsNullOrEmpty(TbxComentario.Text))
@@ -123,7 +123,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
                 }
             }
         }
-
+        */
         private void Volver()
         {
             FrmGruposEntidades Frm = new FrmGruposEntidades();

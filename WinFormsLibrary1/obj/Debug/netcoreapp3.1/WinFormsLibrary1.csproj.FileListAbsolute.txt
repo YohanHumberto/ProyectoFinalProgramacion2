@@ -15,3 +15,4 @@ C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\o
 C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.csproj.CoreCompileInputs.cache
 C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.dll
 C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.pdb
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsLibrary1\obj\Debug\netcoreapp3.1\WinFormsLibrary1.csproj.AssemblyReference.cache

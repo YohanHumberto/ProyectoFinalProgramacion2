@@ -48,7 +48,7 @@ namespace WinFormsApp1
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.240224F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.75977F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 85F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -81,14 +81,14 @@ namespace WinFormsApp1
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(808, 529);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(806, 529);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label5.Location = new System.Drawing.Point(203, 210);
+            this.label5.Location = new System.Drawing.Point(202, 210);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(198, 105);
             this.label5.TabIndex = 5;
@@ -98,7 +98,7 @@ namespace WinFormsApp1
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label2.Location = new System.Drawing.Point(189, 105);
+            this.label2.Location = new System.Drawing.Point(188, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(212, 105);
             this.label2.TabIndex = 0;
@@ -107,17 +107,17 @@ namespace WinFormsApp1
             // TbxUserNameEntidad
             // 
             this.TbxUserNameEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxUserNameEntidad.Location = new System.Drawing.Point(407, 108);
+            this.TbxUserNameEntidad.Location = new System.Drawing.Point(406, 108);
             this.TbxUserNameEntidad.Name = "TbxUserNameEntidad";
-            this.TbxUserNameEntidad.Size = new System.Drawing.Size(398, 39);
+            this.TbxUserNameEntidad.Size = new System.Drawing.Size(397, 39);
             this.TbxUserNameEntidad.TabIndex = 1;
             // 
             // TbxPasswordEntidad
             // 
             this.TbxPasswordEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxPasswordEntidad.Location = new System.Drawing.Point(407, 213);
+            this.TbxPasswordEntidad.Location = new System.Drawing.Point(406, 213);
             this.TbxPasswordEntidad.Name = "TbxPasswordEntidad";
-            this.TbxPasswordEntidad.Size = new System.Drawing.Size(398, 39);
+            this.TbxPasswordEntidad.Size = new System.Drawing.Size(397, 39);
             this.TbxPasswordEntidad.TabIndex = 2;
             // 
             // tableLayoutPanel3
@@ -126,14 +126,14 @@ namespace WinFormsApp1
             this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel3, 2);
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.33334F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel3.Controls.Add(this.BtnLogin, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 423);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(802, 103);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(800, 103);
             this.tableLayoutPanel3.TabIndex = 6;
             // 
             // BtnLogin
@@ -142,7 +142,7 @@ namespace WinFormsApp1
             this.BtnLogin.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnLogin.Location = new System.Drawing.Point(113, 3);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(548, 97);
+            this.BtnLogin.Size = new System.Drawing.Size(544, 97);
             this.BtnLogin.TabIndex = 0;
             this.BtnLogin.Text = "LOGIN";
             this.BtnLogin.UseVisualStyleBackColor = true;
@@ -155,7 +155,7 @@ namespace WinFormsApp1
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(76, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(808, 93);
+            this.label1.Size = new System.Drawing.Size(806, 93);
             this.label1.TabIndex = 1;
             this.label1.Text = "LOGIN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
