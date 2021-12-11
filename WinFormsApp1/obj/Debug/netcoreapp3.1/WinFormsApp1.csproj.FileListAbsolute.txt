@@ -25,3 +25,10 @@ C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFo
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.dll
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.pdb
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.dll.config
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.deps.json
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.runtimeconfig.json
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.runtimeconfig.dev.json
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.pdb
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.CopyComplete
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.genruntimeconfig.cache
