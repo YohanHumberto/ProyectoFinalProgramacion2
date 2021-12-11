@@ -32,13 +32,12 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.TbxComentario = new System.Windows.Forms.TextBox();
-            this.TbxStatus = new System.Windows.Forms.TextBox();
-            this.TbxNoEliminable = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
             this.TbxDescripcion = new System.Windows.Forms.TextBox();
+            this.CbxEstado = new System.Windows.Forms.ComboBox();
+            this.CkbNoEliminable = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnRegGuardar = new System.Windows.Forms.Button();
             this.BtnRegCancelar = new System.Windows.Forms.Button();
@@ -53,7 +52,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.759954F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.24004F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.LblTituloUser, 1, 0);
@@ -70,16 +69,15 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.09524F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.90476F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.98145F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.01855F));
             this.tableLayoutPanel2.Controls.Add(this.TbxComentario, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.TbxStatus, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.TbxNoEliminable, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.label18, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label15, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label14, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblLastName, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.TbxDescripcion, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.CbxEstado, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.CkbNoEliminable, 1, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(60, 84);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -89,48 +87,22 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(596, 427);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(593, 427);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // TbxComentario
             // 
             this.TbxComentario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxComentario.Location = new System.Drawing.Point(277, 109);
+            this.TbxComentario.Location = new System.Drawing.Point(163, 109);
             this.TbxComentario.Name = "TbxComentario";
-            this.TbxComentario.Size = new System.Drawing.Size(316, 27);
+            this.TbxComentario.Size = new System.Drawing.Size(427, 27);
             this.TbxComentario.TabIndex = 30;
-            // 
-            // TbxStatus
-            // 
-            this.TbxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxStatus.Location = new System.Drawing.Point(277, 215);
-            this.TbxStatus.Name = "TbxStatus";
-            this.TbxStatus.Size = new System.Drawing.Size(316, 27);
-            this.TbxStatus.TabIndex = 28;
-            // 
-            // TbxNoEliminable
-            // 
-            this.TbxNoEliminable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxNoEliminable.Location = new System.Drawing.Point(277, 321);
-            this.TbxNoEliminable.Name = "TbxNoEliminable";
-            this.TbxNoEliminable.Size = new System.Drawing.Size(316, 27);
-            this.TbxNoEliminable.TabIndex = 35;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label18.Location = new System.Drawing.Point(169, 318);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(102, 109);
-            this.label18.TabIndex = 24;
-            this.label18.Text = "NoEliminable:";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label15.Location = new System.Drawing.Point(219, 212);
+            this.label15.Location = new System.Drawing.Point(105, 212);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(52, 106);
             this.label15.TabIndex = 21;
@@ -140,7 +112,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             // 
             this.label14.AutoSize = true;
             this.label14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label14.Location = new System.Drawing.Point(181, 106);
+            this.label14.Location = new System.Drawing.Point(67, 106);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(90, 106);
             this.label14.TabIndex = 20;
@@ -150,7 +122,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             // 
             this.lblLastName.AutoSize = true;
             this.lblLastName.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblLastName.Location = new System.Drawing.Point(181, 0);
+            this.lblLastName.Location = new System.Drawing.Point(67, 0);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(90, 106);
             this.lblLastName.TabIndex = 2;
@@ -159,10 +131,28 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             // TbxDescripcion
             // 
             this.TbxDescripcion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxDescripcion.Location = new System.Drawing.Point(277, 3);
+            this.TbxDescripcion.Location = new System.Drawing.Point(163, 3);
             this.TbxDescripcion.Name = "TbxDescripcion";
-            this.TbxDescripcion.Size = new System.Drawing.Size(316, 27);
+            this.TbxDescripcion.Size = new System.Drawing.Size(427, 27);
             this.TbxDescripcion.TabIndex = 3;
+            // 
+            // CbxEstado
+            // 
+            this.CbxEstado.FormattingEnabled = true;
+            this.CbxEstado.Location = new System.Drawing.Point(163, 215);
+            this.CbxEstado.Name = "CbxEstado";
+            this.CbxEstado.Size = new System.Drawing.Size(315, 28);
+            this.CbxEstado.TabIndex = 54;
+            // 
+            // CkbNoEliminable
+            // 
+            this.CkbNoEliminable.AutoSize = true;
+            this.CkbNoEliminable.Location = new System.Drawing.Point(163, 321);
+            this.CkbNoEliminable.Name = "CkbNoEliminable";
+            this.CkbNoEliminable.Size = new System.Drawing.Size(121, 24);
+            this.CkbNoEliminable.TabIndex = 55;
+            this.CkbNoEliminable.Text = "NoEliminable";
+            this.CkbNoEliminable.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
@@ -176,7 +166,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(596, 69);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(593, 69);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // BtnRegGuardar
@@ -184,17 +174,18 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.BtnRegGuardar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRegGuardar.Location = new System.Drawing.Point(3, 3);
             this.BtnRegGuardar.Name = "BtnRegGuardar";
-            this.BtnRegGuardar.Size = new System.Drawing.Size(590, 28);
+            this.BtnRegGuardar.Size = new System.Drawing.Size(587, 28);
             this.BtnRegGuardar.TabIndex = 0;
             this.BtnRegGuardar.Text = "Guardar";
             this.BtnRegGuardar.UseVisualStyleBackColor = true;
+            this.BtnRegGuardar.Click += new System.EventHandler(this.BtnRegGuardar_Click_1);
             // 
             // BtnRegCancelar
             // 
             this.BtnRegCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRegCancelar.Location = new System.Drawing.Point(3, 37);
             this.BtnRegCancelar.Name = "BtnRegCancelar";
-            this.BtnRegCancelar.Size = new System.Drawing.Size(590, 29);
+            this.BtnRegCancelar.Size = new System.Drawing.Size(587, 29);
             this.BtnRegCancelar.TabIndex = 0;
             this.BtnRegCancelar.Text = "Cancelar";
             this.BtnRegCancelar.UseVisualStyleBackColor = true;
@@ -208,9 +199,9 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.LblTituloUser.Font = new System.Drawing.Font("Segoe UI", 24.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.LblTituloUser.Location = new System.Drawing.Point(60, 0);
             this.LblTituloUser.Name = "LblTituloUser";
-            this.LblTituloUser.Size = new System.Drawing.Size(596, 81);
+            this.LblTituloUser.Size = new System.Drawing.Size(593, 81);
             this.LblTituloUser.TabIndex = 2;
-            this.LblTituloUser.Text = "Tipos Entidades";
+            this.LblTituloUser.Text = "Grupos Entidades";
             this.LblTituloUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmAddAndEditGruposEntidades
@@ -236,9 +227,6 @@ namespace WinFormsApp1.GruposEntidadesCRUD
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TextBox TbxComentario;
-        private System.Windows.Forms.TextBox TbxStatus;
-        private System.Windows.Forms.TextBox TbxNoEliminable;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lblLastName;
@@ -247,5 +235,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
         private System.Windows.Forms.Button BtnRegGuardar;
         private System.Windows.Forms.Button BtnRegCancelar;
         private System.Windows.Forms.Label LblTituloUser;
+        private System.Windows.Forms.ComboBox CbxEstado;
+        private System.Windows.Forms.CheckBox CkbNoEliminable;
     }
 }

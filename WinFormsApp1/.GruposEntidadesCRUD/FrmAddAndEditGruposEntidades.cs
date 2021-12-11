@@ -16,14 +16,14 @@ namespace WinFormsApp1.GruposEntidadesCRUD
     public partial class FrmAddAndEditGruposEntidades : Form
     {
         bool EditIsActive;
-        int Index;
+        int Id;
         Datos datos;
 
-        public FrmAddAndEditGruposEntidades(bool editIsActive, int index)
+        public FrmAddAndEditGruposEntidades(bool editIsActive, int Id)
         {
             InitializeComponent();
             this.EditIsActive = editIsActive;
-            this.Index = index;
+            this.Id = Id;
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             SqlConnection connection = new SqlConnection(connectionString);
             datos = new Datos(connection);
@@ -40,7 +40,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
 
         private void BtnRegGuardar_Click(object sender, EventArgs e)
         {
-            ProcesarForm();
+
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
@@ -52,7 +52,10 @@ namespace WinFormsApp1.GruposEntidadesCRUD
         {
             Volver();
         }
-
+       private void BtnRegGuardar_Click_1(object sender, EventArgs e)
+        {
+            ProcesarForm();
+        }
         #endregion
 
         #region "METODOS"
@@ -81,6 +84,21 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             CbxEstado.Items.Add(OptActiva);
             CbxEstado.Items.Add(OptInactiva);
             CbxEstado.SelectedItem = OptDefault;
+
+            if (EditIsActive == true)
+            {
+                GruposEntidad entidad = datos.GetGruposEntidadesById(Id);
+
+                for (int i = 0; i < CbxEstado.Items.Count; i++)
+                {
+                    ComboBoxItem item = CbxEstado.Items[i] as ComboBoxItem;
+
+                    if (item.Text == entidad.Status)
+                    {
+                        CbxEstado.SelectedItem = item;
+                    }
+                }
+            }
         }
 
         private void ProcesarForm()
@@ -133,5 +151,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.Close();
         }
         #endregion
+
+ 
     }
 }

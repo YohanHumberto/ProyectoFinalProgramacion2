@@ -16,14 +16,14 @@ namespace WinFormsApp1.TiposEntidadesCRUD
     public partial class FrmAddAndEditTiposEntidades : Form
     {
         bool EditIsActive;
-        int Index;
+        int Id;
         Datos datos;
 
-        public FrmAddAndEditTiposEntidades(bool editIsActive, int Index)
+        public FrmAddAndEditTiposEntidades(bool editIsActive, int Id)
         {
             InitializeComponent();
             this.EditIsActive = editIsActive;
-            this.Index = Index;
+            this.Id = Id;
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             SqlConnection connection = new SqlConnection(connectionString);
             datos = new Datos(connection);
@@ -40,10 +40,11 @@ namespace WinFormsApp1.TiposEntidadesCRUD
         }
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            loadCbx();
-
         }
-
+        private void FrmAddAndEditTiposEntidades_Load(object sender, EventArgs e)
+        {
+            loadCbx();
+        }
         private void TbxDireccion_TextChanged(object sender, EventArgs e)
         {
 
@@ -90,11 +91,37 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             CbxEstado.Items.Add(OptActiva);
             CbxEstado.Items.Add(OptInactiva);
             CbxEstado.SelectedItem = OptDefault;
+
+
+
+            if (EditIsActive == false)
+            {
+
+                LoadGruposEntidadComboBox();
+            }
+            else if (EditIsActive == true)
+            {
+                TiposEntidad entidad = datos.GetTiposEntidadesById(Id);
+
+                for (int i = 0; i < CbxEstado.Items.Count; i++)
+                {
+                    ComboBoxItem item = CbxEstado.Items[i] as ComboBoxItem;
+
+                    if (item.Text == entidad.Status)
+                    {
+                        CbxEstado.SelectedItem = item;
+                    }
+                }
+                LoadGruposEntidadComboBox();
+            }
         }
+
         private void ProcesarForm()
         {
+            ComboBoxItem selectedItemIdGrupoEntidad = CbxIdGrupoEntidad.SelectedItem as ComboBoxItem;
             ComboBoxItem selectedItemEstado = CbxEstado.SelectedItem as ComboBoxItem;
-            if (string.IsNullOrEmpty(TbxDescripcion.Text) || string.IsNullOrEmpty(TbxIdTipoEntidad.Text) || string.IsNullOrEmpty(TbxComentario.Text))
+
+            if (string.IsNullOrEmpty(TbxDescripcion.Text) || string.IsNullOrEmpty(CbxIdGrupoEntidad.Text) || string.IsNullOrEmpty(TbxComentario.Text))
             {
                 MessageBox.Show("Debe completar los campos para poder agregar una entidad", "ADVERTENCIA");
             }
@@ -105,7 +132,7 @@ namespace WinFormsApp1.TiposEntidadesCRUD
                     TiposEntidad tiposEntidad = new TiposEntidad
                     {
                         Descripcion = TbxDescripcion.Text,
-                        IdGrupoEntidad = (int)Convert.ToDecimal(TbxIdTipoEntidad.Text),
+                        IdGrupoEntidad = selectedItemIdGrupoEntidad.Value,
                         Comentario = TbxComentario.Text,
 
                         Status = selectedItemEstado.Text,
@@ -138,12 +165,55 @@ namespace WinFormsApp1.TiposEntidadesCRUD
         }
             private void Regresar()
         {
+            FrmTiposEntidades Frm = new FrmTiposEntidades();
+            Frm.WindowState = FormWindowState.Maximized;
+            Frm.MdiParent = FrmMenúPrincipal.instancia;
+            Frm.Show();
+            this.Close();
+        }
 
+        private void LoadGruposEntidadComboBox()
+        {
+
+            CbxIdGrupoEntidad.Items.Clear();
+
+            ComboBoxItem OptDefault = new ComboBoxItem
+            {
+                Text = "Seleccione una Opccion",
+                Value = -1,
+            };
+
+            List<ComboBoxItem> listComboboxGE = new List<ComboBoxItem>();
+
+            List<GruposEntidad> ListGruposEntidads = datos.GetListGruposEntidades();
+
+            if (ListGruposEntidads == null)
+            {
+                MessageBox.Show("IS null GetListGruposEntidades", "ALERT");
+            }
+            else
+            {
+                foreach (GruposEntidad item in ListGruposEntidads)
+                {
+                    listComboboxGE.Add(new ComboBoxItem
+                    {
+                        Text = item.Descripcion,
+                        Value = item.IdGrupoEntidad,
+                    });
+                }
+
+                foreach (ComboBoxItem item in listComboboxGE)
+                {
+                    CbxIdGrupoEntidad.Items.Add(item);
+                }
+                CbxIdGrupoEntidad.Items.Add(OptDefault);
+                CbxIdGrupoEntidad.SelectedItem = OptDefault;
+            }
         }
 
 
         #endregion;
 
-       
+
     }
 }

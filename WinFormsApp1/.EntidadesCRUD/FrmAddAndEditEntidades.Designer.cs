@@ -87,7 +87,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.759954F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.24004F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.LblTituloUser, 1, 0);
@@ -174,7 +174,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.271084F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.024096F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(833, 661);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(832, 661);
             this.tableLayoutPanel2.TabIndex = 0;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
@@ -194,7 +194,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.CkbNoEliminable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CkbNoEliminable.Location = new System.Drawing.Point(246, 607);
             this.CkbNoEliminable.Name = "CkbNoEliminable";
-            this.CkbNoEliminable.Size = new System.Drawing.Size(584, 51);
+            this.CkbNoEliminable.Size = new System.Drawing.Size(583, 51);
             this.CkbNoEliminable.TabIndex = 44;
             this.CkbNoEliminable.Text = "NoEliminable";
             this.CkbNoEliminable.UseVisualStyleBackColor = true;
@@ -244,7 +244,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxDescripcion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxDescripcion.Location = new System.Drawing.Point(246, 3);
             this.TbxDescripcion.Name = "TbxDescripcion";
-            this.TbxDescripcion.Size = new System.Drawing.Size(584, 27);
+            this.TbxDescripcion.Size = new System.Drawing.Size(583, 27);
             this.TbxDescripcion.TabIndex = 3;
             // 
             // TbxDireccion
@@ -252,7 +252,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxDireccion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxDireccion.Location = new System.Drawing.Point(246, 33);
             this.TbxDireccion.Name = "TbxDireccion";
-            this.TbxDireccion.Size = new System.Drawing.Size(584, 27);
+            this.TbxDireccion.Size = new System.Drawing.Size(583, 27);
             this.TbxDireccion.TabIndex = 3;
             // 
             // TbxLocalidad
@@ -260,7 +260,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxLocalidad.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxLocalidad.Location = new System.Drawing.Point(246, 63);
             this.TbxLocalidad.Name = "TbxLocalidad";
-            this.TbxLocalidad.Size = new System.Drawing.Size(584, 27);
+            this.TbxLocalidad.Size = new System.Drawing.Size(583, 27);
             this.TbxLocalidad.TabIndex = 3;
             // 
             // label1
@@ -288,7 +288,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxPassworEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxPassworEntidad.Location = new System.Drawing.Point(246, 483);
             this.TbxPassworEntidad.Name = "TbxPassworEntidad";
-            this.TbxPassworEntidad.Size = new System.Drawing.Size(584, 27);
+            this.TbxPassworEntidad.Size = new System.Drawing.Size(583, 27);
             this.TbxPassworEntidad.TabIndex = 34;
             // 
             // TbxUserNameEntidad
@@ -296,7 +296,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxUserNameEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxUserNameEntidad.Location = new System.Drawing.Point(246, 453);
             this.TbxUserNameEntidad.Name = "TbxUserNameEntidad";
-            this.TbxUserNameEntidad.Size = new System.Drawing.Size(584, 27);
+            this.TbxUserNameEntidad.Size = new System.Drawing.Size(583, 27);
             this.TbxUserNameEntidad.TabIndex = 36;
             // 
             // TbxLimiteCredito
@@ -304,7 +304,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxLimiteCredito.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxLimiteCredito.Location = new System.Drawing.Point(246, 423);
             this.TbxLimiteCredito.Name = "TbxLimiteCredito";
-            this.TbxLimiteCredito.Size = new System.Drawing.Size(584, 27);
+            this.TbxLimiteCredito.Size = new System.Drawing.Size(583, 27);
             this.TbxLimiteCredito.TabIndex = 37;
             // 
             // TbxNumeroDocumento
@@ -312,7 +312,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxNumeroDocumento.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxNumeroDocumento.Location = new System.Drawing.Point(246, 153);
             this.TbxNumeroDocumento.Name = "TbxNumeroDocumento";
-            this.TbxNumeroDocumento.Size = new System.Drawing.Size(584, 27);
+            this.TbxNumeroDocumento.Size = new System.Drawing.Size(583, 27);
             this.TbxNumeroDocumento.TabIndex = 40;
             // 
             // label5
@@ -457,7 +457,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.CbxTipoEntidad.FormattingEnabled = true;
             this.CbxTipoEntidad.Location = new System.Drawing.Point(246, 93);
             this.CbxTipoEntidad.Name = "CbxTipoEntidad";
-            this.CbxTipoEntidad.Size = new System.Drawing.Size(584, 28);
+            this.CbxTipoEntidad.Size = new System.Drawing.Size(583, 28);
             this.CbxTipoEntidad.TabIndex = 47;
             // 
             // CbxTipoDocumento
@@ -466,7 +466,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.CbxTipoDocumento.FormattingEnabled = true;
             this.CbxTipoDocumento.Location = new System.Drawing.Point(246, 123);
             this.CbxTipoDocumento.Name = "CbxTipoDocumento";
-            this.CbxTipoDocumento.Size = new System.Drawing.Size(584, 28);
+            this.CbxTipoDocumento.Size = new System.Drawing.Size(583, 28);
             this.CbxTipoDocumento.TabIndex = 48;
             // 
             // TbxTeléfonos
@@ -474,7 +474,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxTeléfonos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxTeléfonos.Location = new System.Drawing.Point(246, 183);
             this.TbxTeléfonos.Name = "TbxTeléfonos";
-            this.TbxTeléfonos.Size = new System.Drawing.Size(584, 27);
+            this.TbxTeléfonos.Size = new System.Drawing.Size(583, 27);
             this.TbxTeléfonos.TabIndex = 10;
             // 
             // TbxURLFacebook
@@ -482,7 +482,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxURLFacebook.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxURLFacebook.Location = new System.Drawing.Point(246, 243);
             this.TbxURLFacebook.Name = "TbxURLFacebook";
-            this.TbxURLFacebook.Size = new System.Drawing.Size(584, 27);
+            this.TbxURLFacebook.Size = new System.Drawing.Size(583, 27);
             this.TbxURLFacebook.TabIndex = 39;
             // 
             // TbxURLPaginaWeb
@@ -490,7 +490,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxURLPaginaWeb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxURLPaginaWeb.Location = new System.Drawing.Point(246, 213);
             this.TbxURLPaginaWeb.Name = "TbxURLPaginaWeb";
-            this.TbxURLPaginaWeb.Size = new System.Drawing.Size(584, 27);
+            this.TbxURLPaginaWeb.Size = new System.Drawing.Size(583, 27);
             this.TbxURLPaginaWeb.TabIndex = 27;
             // 
             // TbxURLInstagram
@@ -498,7 +498,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxURLInstagram.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxURLInstagram.Location = new System.Drawing.Point(246, 273);
             this.TbxURLInstagram.Name = "TbxURLInstagram";
-            this.TbxURLInstagram.Size = new System.Drawing.Size(584, 27);
+            this.TbxURLInstagram.Size = new System.Drawing.Size(583, 27);
             this.TbxURLInstagram.TabIndex = 42;
             // 
             // TbxURLTwitter
@@ -506,7 +506,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxURLTwitter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxURLTwitter.Location = new System.Drawing.Point(246, 303);
             this.TbxURLTwitter.Name = "TbxURLTwitter";
-            this.TbxURLTwitter.Size = new System.Drawing.Size(584, 27);
+            this.TbxURLTwitter.Size = new System.Drawing.Size(583, 27);
             this.TbxURLTwitter.TabIndex = 32;
             // 
             // TbxURLTikTok
@@ -514,7 +514,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxURLTikTok.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxURLTikTok.Location = new System.Drawing.Point(246, 333);
             this.TbxURLTikTok.Name = "TbxURLTikTok";
-            this.TbxURLTikTok.Size = new System.Drawing.Size(584, 27);
+            this.TbxURLTikTok.Size = new System.Drawing.Size(583, 27);
             this.TbxURLTikTok.TabIndex = 33;
             this.TbxURLTikTok.TextChanged += new System.EventHandler(this.TbxIdTipoEntidad_TextChanged);
             // 
@@ -524,7 +524,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.CbxIdGrupoEntidad.FormattingEnabled = true;
             this.CbxIdGrupoEntidad.Location = new System.Drawing.Point(246, 363);
             this.CbxIdGrupoEntidad.Name = "CbxIdGrupoEntidad";
-            this.CbxIdGrupoEntidad.Size = new System.Drawing.Size(584, 28);
+            this.CbxIdGrupoEntidad.Size = new System.Drawing.Size(583, 28);
             this.CbxIdGrupoEntidad.TabIndex = 46;
             this.CbxIdGrupoEntidad.SelectedValueChanged += new System.EventHandler(this.CbxIdGrupoEntidad_SelectedValueChanged);
             // 
@@ -534,7 +534,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.CbxIdTipoEntidad.FormattingEnabled = true;
             this.CbxIdTipoEntidad.Location = new System.Drawing.Point(246, 393);
             this.CbxIdTipoEntidad.Name = "CbxIdTipoEntidad";
-            this.CbxIdTipoEntidad.Size = new System.Drawing.Size(584, 28);
+            this.CbxIdTipoEntidad.Size = new System.Drawing.Size(583, 28);
             this.CbxIdTipoEntidad.TabIndex = 45;
             // 
             // CbxRolUserEntidad
@@ -543,7 +543,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.CbxRolUserEntidad.FormattingEnabled = true;
             this.CbxRolUserEntidad.Location = new System.Drawing.Point(246, 513);
             this.CbxRolUserEntidad.Name = "CbxRolUserEntidad";
-            this.CbxRolUserEntidad.Size = new System.Drawing.Size(584, 28);
+            this.CbxRolUserEntidad.Size = new System.Drawing.Size(583, 28);
             this.CbxRolUserEntidad.TabIndex = 49;
             // 
             // TbxComentario
@@ -551,7 +551,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.TbxComentario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbxComentario.Location = new System.Drawing.Point(246, 543);
             this.TbxComentario.Name = "TbxComentario";
-            this.TbxComentario.Size = new System.Drawing.Size(584, 27);
+            this.TbxComentario.Size = new System.Drawing.Size(583, 27);
             this.TbxComentario.TabIndex = 30;
             // 
             // CbxEstado
@@ -560,7 +560,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.CbxEstado.FormattingEnabled = true;
             this.CbxEstado.Location = new System.Drawing.Point(246, 573);
             this.CbxEstado.Name = "CbxEstado";
-            this.CbxEstado.Size = new System.Drawing.Size(584, 28);
+            this.CbxEstado.Size = new System.Drawing.Size(583, 28);
             this.CbxEstado.TabIndex = 51;
             this.CbxEstado.SelectedIndexChanged += new System.EventHandler(this.CbxEstado_SelectedIndexChanged);
             // 
@@ -576,7 +576,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(833, 69);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(832, 69);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // BtnRegGuardar
@@ -584,7 +584,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.BtnRegGuardar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRegGuardar.Location = new System.Drawing.Point(3, 3);
             this.BtnRegGuardar.Name = "BtnRegGuardar";
-            this.BtnRegGuardar.Size = new System.Drawing.Size(827, 28);
+            this.BtnRegGuardar.Size = new System.Drawing.Size(826, 28);
             this.BtnRegGuardar.TabIndex = 0;
             this.BtnRegGuardar.Text = "Guardar";
             this.BtnRegGuardar.UseVisualStyleBackColor = true;
@@ -595,7 +595,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.BtnRegCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRegCancelar.Location = new System.Drawing.Point(3, 37);
             this.BtnRegCancelar.Name = "BtnRegCancelar";
-            this.BtnRegCancelar.Size = new System.Drawing.Size(827, 29);
+            this.BtnRegCancelar.Size = new System.Drawing.Size(826, 29);
             this.BtnRegCancelar.TabIndex = 0;
             this.BtnRegCancelar.Text = "Cancelar";
             this.BtnRegCancelar.UseVisualStyleBackColor = true;
@@ -609,7 +609,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.LblTituloUser.Font = new System.Drawing.Font("Segoe UI", 24.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.LblTituloUser.Location = new System.Drawing.Point(83, 0);
             this.LblTituloUser.Name = "LblTituloUser";
-            this.LblTituloUser.Size = new System.Drawing.Size(833, 71);
+            this.LblTituloUser.Size = new System.Drawing.Size(832, 71);
             this.LblTituloUser.TabIndex = 2;
             this.LblTituloUser.Text = "Entidades";
             this.LblTituloUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
