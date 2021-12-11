@@ -1,8 +1,14 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\HP\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\HP\\.nuget\\packages",
+=======
+      "C:\\Users\\Asus Rog Zephyrus\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Asus Rog Zephyrus\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+>>>>>>> 0c7f4fe00acc63969d60df8d4e84adb57a4e2dc0
       "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
     ]
   }

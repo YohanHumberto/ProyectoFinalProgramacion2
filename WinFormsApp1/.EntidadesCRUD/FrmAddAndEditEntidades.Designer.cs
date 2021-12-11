@@ -562,6 +562,7 @@ namespace WinFormsApp1.EntidadesCRUD
             this.CbxEstado.Name = "CbxEstado";
             this.CbxEstado.Size = new System.Drawing.Size(584, 28);
             this.CbxEstado.TabIndex = 51;
+            this.CbxEstado.SelectedIndexChanged += new System.EventHandler(this.CbxEstado_SelectedIndexChanged);
             // 
             // tableLayoutPanel3
             // 

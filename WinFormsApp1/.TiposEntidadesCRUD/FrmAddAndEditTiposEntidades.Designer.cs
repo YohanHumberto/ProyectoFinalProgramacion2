@@ -34,13 +34,12 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             this.BtnRegGuardar = new System.Windows.Forms.Button();
             this.BtnRegCancelar = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.TbxComentario = new System.Windows.Forms.TextBox();
-            this.TbxIdTipoEntidad = new System.Windows.Forms.TextBox();
-            this.TbxStatus = new System.Windows.Forms.TextBox();
-            this.TbxNoEliminable = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.CbxEstado = new System.Windows.Forms.ComboBox();
+            this.TbxComentario = new System.Windows.Forms.TextBox();
+            this.CkbNoEliminable = new System.Windows.Forms.CheckBox();
+            this.TbxIdTipoEntidad = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
             this.TbxDescripcion = new System.Windows.Forms.TextBox();
@@ -58,7 +57,7 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             this.LblTituloUser.Font = new System.Drawing.Font("Segoe UI", 24.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.LblTituloUser.Location = new System.Drawing.Point(61, 0);
             this.LblTituloUser.Name = "LblTituloUser";
-            this.LblTituloUser.Size = new System.Drawing.Size(605, 73);
+            this.LblTituloUser.Size = new System.Drawing.Size(602, 73);
             this.LblTituloUser.TabIndex = 2;
             this.LblTituloUser.Text = "Tipos Entidades";
             this.LblTituloUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -75,7 +74,7 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(605, 69);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(602, 69);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // BtnRegGuardar
@@ -83,33 +82,34 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             this.BtnRegGuardar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRegGuardar.Location = new System.Drawing.Point(3, 3);
             this.BtnRegGuardar.Name = "BtnRegGuardar";
-            this.BtnRegGuardar.Size = new System.Drawing.Size(599, 28);
+            this.BtnRegGuardar.Size = new System.Drawing.Size(596, 28);
             this.BtnRegGuardar.TabIndex = 0;
             this.BtnRegGuardar.Text = "Guardar";
             this.BtnRegGuardar.UseVisualStyleBackColor = true;
+            this.BtnRegGuardar.Click += new System.EventHandler(this.BtnRegGuardar_Click);
             // 
             // BtnRegCancelar
             // 
             this.BtnRegCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRegCancelar.Location = new System.Drawing.Point(3, 37);
             this.BtnRegCancelar.Name = "BtnRegCancelar";
-            this.BtnRegCancelar.Size = new System.Drawing.Size(599, 29);
+            this.BtnRegCancelar.Size = new System.Drawing.Size(596, 29);
             this.BtnRegCancelar.TabIndex = 0;
             this.BtnRegCancelar.Text = "Cancelar";
             this.BtnRegCancelar.UseVisualStyleBackColor = true;
+            this.BtnRegCancelar.Click += new System.EventHandler(this.BtnRegCancelar_Click);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.09524F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.90476F));
-            this.tableLayoutPanel2.Controls.Add(this.TbxComentario, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.TbxIdTipoEntidad, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.TbxStatus, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.TbxNoEliminable, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label18, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label15, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.CbxEstado, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.TbxComentario, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.CkbNoEliminable, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.TbxIdTipoEntidad, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label14, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.lblLastName, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.TbxDescripcion, 1, 0);
@@ -123,76 +123,70 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(605, 380);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(602, 380);
             this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // TbxComentario
-            // 
-            this.TbxComentario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxComentario.Location = new System.Drawing.Point(281, 155);
-            this.TbxComentario.Name = "TbxComentario";
-            this.TbxComentario.Size = new System.Drawing.Size(321, 27);
-            this.TbxComentario.TabIndex = 30;
-            // 
-            // TbxIdTipoEntidad
-            // 
-            this.TbxIdTipoEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxIdTipoEntidad.Location = new System.Drawing.Point(281, 79);
-            this.TbxIdTipoEntidad.Name = "TbxIdTipoEntidad";
-            this.TbxIdTipoEntidad.Size = new System.Drawing.Size(321, 27);
-            this.TbxIdTipoEntidad.TabIndex = 33;
-            // 
-            // TbxStatus
-            // 
-            this.TbxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxStatus.Location = new System.Drawing.Point(281, 231);
-            this.TbxStatus.Name = "TbxStatus";
-            this.TbxStatus.Size = new System.Drawing.Size(321, 27);
-            this.TbxStatus.TabIndex = 28;
-            // 
-            // TbxNoEliminable
-            // 
-            this.TbxNoEliminable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxNoEliminable.Location = new System.Drawing.Point(281, 307);
-            this.TbxNoEliminable.Name = "TbxNoEliminable";
-            this.TbxNoEliminable.Size = new System.Drawing.Size(321, 27);
-            this.TbxNoEliminable.TabIndex = 35;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label18.Location = new System.Drawing.Point(173, 304);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(102, 76);
-            this.label18.TabIndex = 24;
-            this.label18.Text = "NoEliminable:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label10.Location = new System.Drawing.Point(171, 76);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 76);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "GrupoEntidad:";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label15.Location = new System.Drawing.Point(223, 228);
+            this.label15.Location = new System.Drawing.Point(217, 228);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 76);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "Status:";
+            this.label15.Size = new System.Drawing.Size(57, 76);
+            this.label15.TabIndex = 52;
+            this.label15.Text = "Estado:";
+            // 
+            // CbxEstado
+            // 
+            this.CbxEstado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CbxEstado.FormattingEnabled = true;
+            this.CbxEstado.Location = new System.Drawing.Point(280, 231);
+            this.CbxEstado.Name = "CbxEstado";
+            this.CbxEstado.Size = new System.Drawing.Size(319, 28);
+            this.CbxEstado.TabIndex = 53;
+            // 
+            // TbxComentario
+            // 
+            this.TbxComentario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TbxComentario.Location = new System.Drawing.Point(280, 155);
+            this.TbxComentario.Name = "TbxComentario";
+            this.TbxComentario.Size = new System.Drawing.Size(319, 27);
+            this.TbxComentario.TabIndex = 30;
+            // 
+            // CkbNoEliminable
+            // 
+            this.CkbNoEliminable.AutoSize = true;
+            this.CkbNoEliminable.Location = new System.Drawing.Point(280, 307);
+            this.CkbNoEliminable.Name = "CkbNoEliminable";
+            this.CkbNoEliminable.Size = new System.Drawing.Size(121, 24);
+            this.CkbNoEliminable.TabIndex = 0;
+            this.CkbNoEliminable.Text = "NoEliminable";
+            this.CkbNoEliminable.UseVisualStyleBackColor = true;
+            this.CkbNoEliminable.CheckedChanged += new System.EventHandler(this.ChNoEliminable_CheckedChanged);
+            // 
+            // TbxIdTipoEntidad
+            // 
+            this.TbxIdTipoEntidad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TbxIdTipoEntidad.Location = new System.Drawing.Point(280, 79);
+            this.TbxIdTipoEntidad.Name = "TbxIdTipoEntidad";
+            this.TbxIdTipoEntidad.Size = new System.Drawing.Size(319, 27);
+            this.TbxIdTipoEntidad.TabIndex = 33;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label10.Location = new System.Drawing.Point(170, 76);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(104, 76);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "GrupoEntidad:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label14.Location = new System.Drawing.Point(185, 152);
+            this.label14.Location = new System.Drawing.Point(184, 152);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(90, 76);
             this.label14.TabIndex = 20;
@@ -202,7 +196,7 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             // 
             this.lblLastName.AutoSize = true;
             this.lblLastName.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblLastName.Location = new System.Drawing.Point(185, 0);
+            this.lblLastName.Location = new System.Drawing.Point(184, 0);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(90, 76);
             this.lblLastName.TabIndex = 2;
@@ -211,9 +205,9 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             // TbxDescripcion
             // 
             this.TbxDescripcion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxDescripcion.Location = new System.Drawing.Point(281, 3);
+            this.TbxDescripcion.Location = new System.Drawing.Point(280, 3);
             this.TbxDescripcion.Name = "TbxDescripcion";
-            this.TbxDescripcion.Size = new System.Drawing.Size(321, 27);
+            this.TbxDescripcion.Size = new System.Drawing.Size(319, 27);
             this.TbxDescripcion.TabIndex = 3;
             // 
             // tableLayoutPanel1
@@ -221,7 +215,7 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.759954F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.24004F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.LblTituloUser, 1, 0);
@@ -234,6 +228,7 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(753, 534);
             this.tableLayoutPanel1.TabIndex = 5;
+            this.tableLayoutPanel1.VisibleChanged += new System.EventHandler(this.tableLayoutPanel1_VisibleChanged);
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // FrmAddAndEditTiposEntidades
@@ -263,14 +258,13 @@ namespace WinFormsApp1.TiposEntidadesCRUD
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TextBox TbxComentario;
         private System.Windows.Forms.TextBox TbxIdTipoEntidad;
-        private System.Windows.Forms.TextBox TbxStatus;
-        private System.Windows.Forms.TextBox TbxNoEliminable;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.TextBox TbxDescripcion;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.CheckBox CkbNoEliminable;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox CbxEstado;
     }
 }
