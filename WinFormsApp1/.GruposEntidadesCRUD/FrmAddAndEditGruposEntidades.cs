@@ -126,7 +126,6 @@ namespace WinFormsApp1.GruposEntidadesCRUD
 
         private void Volver()
         {
-            MessageBox.Show("El grupo de entidad se agrego con exito", "NOTIFICACION");
             FrmGruposEntidades Frm = new FrmGruposEntidades();
             Frm.WindowState = FormWindowState.Maximized;
             Frm.MdiParent = FrmMenúPrincipal.instancia;
