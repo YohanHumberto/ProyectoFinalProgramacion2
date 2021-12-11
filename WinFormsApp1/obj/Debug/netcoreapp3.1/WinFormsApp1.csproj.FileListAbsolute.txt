@@ -1,23 +1,31 @@
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.exe
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.dll
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsLibrary1.dll
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsLibrary1.pdb
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.AssemblyReference.cache
-C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmEntidades.resources
-C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmGruposEntidades.resources
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmLogin.resources
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmMenúPrincipal.resources
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmWelcome.resources
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Properties.Resources.resources
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.EntidadesCRUD.FrmAddAndEditEntidades.resources
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmEntidades.resources
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.GruposEntidadesCRUD.FrmAddAndEditGruposEntidades.resources
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmGruposEntidades.resources
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.TiposEntidadesCRUD.FrmAddAndEditTiposEntidades.resources
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmTiposEntidades.resources
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.GenerateResource.cache
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.AssemblyInfoInputs.cache
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.AssemblyInfo.cs
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Properties.Resources.resources
-C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmWelcome.resources
-C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.exe
-C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.deps.json
-C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.runtimeconfig.json
-C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.runtimeconfig.dev.json
-C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.dll
-C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\bin\Debug\netcoreapp3.1\WinFormsApp1.pdb
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.dll
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.pdb
+<<<<<<< HEAD
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.genruntimeconfig.cache
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.EntidadesCRUD.FrmAddAndEditEntidades.resources
 C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.GruposEntidadesCRUD.FrmAddAndEditGruposEntidades.resources
@@ -66,3 +74,5 @@ C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\D
 C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.dll
 C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.pdb
 C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.genruntimeconfig.cache
+=======
+>>>>>>> d6fe6b0258eb7be4b7a5fe255de09ea2239f663e

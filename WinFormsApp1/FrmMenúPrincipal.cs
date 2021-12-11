@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using WinFormsApp1.EntidadesCRUD;
 
 namespace WinFormsApp1
 {
@@ -61,7 +62,6 @@ namespace WinFormsApp1
             Frm.WindowState = FormWindowState.Maximized;
             Frm.MdiParent = this;
             Frm.Show();
-           
         }
 
         private void MostrarFrmGrupoEntiadades()
@@ -83,6 +83,18 @@ namespace WinFormsApp1
         private void Salir()
         {
             Application.Exit();
+        }
+
+        #endregion
+
+        #region "METODOS PUBLICOS"
+
+        public void AbrirFrmAddAndEditEntidades(bool editIsActive, int Index)
+        {
+            FrmAddAndEditEntidades Frm = new FrmAddAndEditEntidades(editIsActive, Index);
+            Frm.WindowState = FormWindowState.Maximized;
+            Frm.MdiParent = this;
+            Frm.Show();
         }
 
         #endregion

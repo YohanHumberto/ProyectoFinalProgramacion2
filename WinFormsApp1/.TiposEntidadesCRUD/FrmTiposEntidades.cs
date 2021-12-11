@@ -1,4 +1,5 @@
 ﻿using System;
+<<<<<<< HEAD
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -6,6 +7,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
+=======
+>>>>>>> d6fe6b0258eb7be4b7a5fe255de09ea2239f663e
 using System.Windows.Forms;
 using WinFormsApp1.TiposEntidadesCRUD;
 using WinFormsLibrary1;

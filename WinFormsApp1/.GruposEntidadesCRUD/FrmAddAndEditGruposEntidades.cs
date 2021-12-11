@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace WinFormsApp1.GruposEntidadesCRUD
@@ -21,6 +16,11 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             {
                 this.WindowState = FormWindowState.Maximized;
             }
+        }
+
+        private void BtnRegCancelar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
