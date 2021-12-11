@@ -34,24 +34,31 @@ namespace WinFormsApp1.TiposEntidadesCRUD
         {
 
         }
+
         private void BtnRegGuardar_Click(object sender, EventArgs e)
         {
             ProcesarForm();
         }
+
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
         }
+
         private void FrmAddAndEditTiposEntidades_Load(object sender, EventArgs e)
         {
             loadCbx();
+            LoadEditMode();
         }
+
         private void TbxDireccion_TextChanged(object sender, EventArgs e)
         {
 
         }
+
         private void tableLayoutPanel1_VisibleChanged(object sender, EventArgs e)
         {
         }
+
         private void FrmAddAndEditTiposEntidades_Resize(object sender, EventArgs e)
         {
             if (this.WindowState != FormWindowState.Maximized)
@@ -65,10 +72,21 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             Regresar();
         }
 
+        #endregion
 
-
-        #endregion;
         #region "Metodos"
+
+        private void LoadEditMode()
+        {
+            if (EditIsActive)
+            {
+               TiposEntidad TipoEntidad =  datos.GetTiposEntidadesById(Id);
+               TbxComentario.Text = TipoEntidad.Comentario;
+               TbxDescripcion.Text = TipoEntidad.Descripcion;
+               CkbNoEliminable.Checked = TipoEntidad.NoEliminable;
+            }
+        }
+
         private void loadCbx()
         {
             ComboBoxItem OptDefault = new ComboBoxItem
@@ -90,30 +108,27 @@ namespace WinFormsApp1.TiposEntidadesCRUD
             CbxEstado.Items.Add(OptDefault);
             CbxEstado.Items.Add(OptActiva);
             CbxEstado.Items.Add(OptInactiva);
-            CbxEstado.SelectedItem = OptDefault;
-
-
+           
 
             if (EditIsActive == false)
             {
-
-                LoadGruposEntidadComboBox();
+                CbxEstado.SelectedItem = OptDefault;
             }
             else if (EditIsActive == true)
             {
-                TiposEntidad entidad = datos.GetTiposEntidadesById(Id);
+                TiposEntidad TipoEntidad = datos.GetTiposEntidadesById(Id);
 
-                for (int i = 0; i < CbxEstado.Items.Count; i++)
+                if (TipoEntidad.Status == "Activa")
                 {
-                    ComboBoxItem item = CbxEstado.Items[i] as ComboBoxItem;
-
-                    if (item.Text == entidad.Status)
-                    {
-                        CbxEstado.SelectedItem = item;
-                    }
+                    CbxEstado.SelectedItem = OptActiva;
                 }
-                LoadGruposEntidadComboBox();
+                else
+                {
+                    CbxEstado.SelectedItem = OptInactiva;
+                }
             }
+
+            LoadGruposEntidadComboBox();
         }
 
         private void ProcesarForm()
@@ -134,23 +149,46 @@ namespace WinFormsApp1.TiposEntidadesCRUD
                         Descripcion = TbxDescripcion.Text,
                         IdGrupoEntidad = selectedItemIdGrupoEntidad.Value,
                         Comentario = TbxComentario.Text,
-
                         Status = selectedItemEstado.Text,
                         NoEliminable = CkbNoEliminable.Checked,
                     };
-                    bool res = datos.AddTiposEntidade(tiposEntidad);
-                    if (res == true)
+
+                    if (!EditIsActive)
                     {
-                        MessageBox.Show("El tipo de entidad se agrego con exito", "NOTIFICACION");
-                        FrmTiposEntidades Frm = new FrmTiposEntidades();
-                        Frm.WindowState = FormWindowState.Maximized;
-                        Frm.MdiParent = FrmMenúPrincipal.instancia;
-                        Frm.Show();
-                        this.Close();
+                        bool res = datos.AddTiposEntidade(tiposEntidad);
+
+                        if (res == true)
+                        {
+                            MessageBox.Show("El tipo de entidad se agrego con exito", "NOTIFICACION");
+                            FrmTiposEntidades Frm = new FrmTiposEntidades();
+                            Frm.WindowState = FormWindowState.Maximized;
+                            Frm.MdiParent = FrmMenúPrincipal.instancia;
+                            Frm.Show();
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se pudo agregar el tipo de entidad", "ADVERTENCIA");
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("No se pudo agregar el tipo de entidad", "ADVERTENCIA");
+                        tiposEntidad.IdTipoEntidad = Id;
+                        bool res = datos.EditTiposEntidade(tiposEntidad);
+
+                        if (res == true)
+                        {
+                            MessageBox.Show("El tipo de entidad se edito con exito", "NOTIFICACION");
+                            FrmTiposEntidades Frm = new FrmTiposEntidades();
+                            Frm.WindowState = FormWindowState.Maximized;
+                            Frm.MdiParent = FrmMenúPrincipal.instancia;
+                            Frm.Show();
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se pudo editar el tipo de entidad", "ADVERTENCIA");
+                        }
                     }
 
 
@@ -163,7 +201,8 @@ namespace WinFormsApp1.TiposEntidadesCRUD
 
             }
         }
-            private void Regresar()
+
+        private void Regresar()
         {
             FrmTiposEntidades Frm = new FrmTiposEntidades();
             Frm.WindowState = FormWindowState.Maximized;
@@ -185,6 +224,7 @@ namespace WinFormsApp1.TiposEntidadesCRUD
 
             List<ComboBoxItem> listComboboxGE = new List<ComboBoxItem>();
 
+            TiposEntidad TipoEntidad = datos.GetTiposEntidadesById(Id);
             List<GruposEntidad> ListGruposEntidads = datos.GetListGruposEntidades();
 
             if (ListGruposEntidads == null)
@@ -205,12 +245,20 @@ namespace WinFormsApp1.TiposEntidadesCRUD
                 foreach (ComboBoxItem item in listComboboxGE)
                 {
                     CbxIdGrupoEntidad.Items.Add(item);
+
+                    if (EditIsActive && item.Value == TipoEntidad.IdGrupoEntidad)
+                    {
+                        CbxIdGrupoEntidad.SelectedItem = item;
+                    }
                 }
-                CbxIdGrupoEntidad.Items.Add(OptDefault);
-                CbxIdGrupoEntidad.SelectedItem = OptDefault;
+
+                if (!EditIsActive)
+                {
+                    CbxIdGrupoEntidad.Items.Add(OptDefault);
+                    CbxIdGrupoEntidad.SelectedItem = OptDefault;
+                }
             }
         }
-
 
         #endregion;
 

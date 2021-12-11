@@ -4,7 +4,8 @@ using System.Text;
 
 namespace WinFormsLibrary1
 {
-    class Presentación
+    public class Presentación
     {
+
     }
 }

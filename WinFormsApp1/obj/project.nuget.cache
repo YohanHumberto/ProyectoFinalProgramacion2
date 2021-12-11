@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yxaJQXuX95KdivP1hbJTUEB6P7h+mahm+a3KuKpMOySaxiwpIMzUH8WxvFcYEuHUwciDh+W9oGgwkz/ZKH6JKA==",
+  "dgSpecHash": "8hBk5l2FXnFmNoPTadlMBT9mYqXCVU2x/bMgGEvg2vUZk+NERqqUKZ4N3y3ZJ5d7mDNz11dxtLg6vK3ZE9e0Pw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsApp1\\WinFormsApp1.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\Nueva carpeta (3)\\ProyectoFinalProgramacion2\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

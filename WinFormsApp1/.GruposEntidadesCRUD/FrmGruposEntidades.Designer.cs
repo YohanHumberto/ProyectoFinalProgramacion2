@@ -46,8 +46,7 @@ namespace WinFormsApp1
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.TbxBuscar = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -200,6 +199,7 @@ namespace WinFormsApp1
             this.button3.TabIndex = 0;
             this.button3.Text = "Agregar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // tableLayoutPanel3
             // 
@@ -227,6 +227,7 @@ namespace WinFormsApp1
             this.button4.Text = "Eliminar";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Visible = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button5
             // 
@@ -239,6 +240,7 @@ namespace WinFormsApp1
             this.button5.Text = "Editar";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Visible = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // label2
             // 
@@ -249,7 +251,7 @@ namespace WinFormsApp1
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(718, 105);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Entidades";
+            this.label2.Text = "Grupos Entidades";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel5
@@ -284,14 +286,14 @@ namespace WinFormsApp1
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(712, 389);
             this.dataGridView2.TabIndex = 3;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick_1);
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick_1);
             // 
             // tableLayoutPanel6
             // 
-            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.46554F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.53446F));
-            this.tableLayoutPanel6.Controls.Add(this.textBox1, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.button6, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.TbxBuscar, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -302,23 +304,14 @@ namespace WinFormsApp1
             this.tableLayoutPanel6.Size = new System.Drawing.Size(712, 65);
             this.tableLayoutPanel6.TabIndex = 4;
             // 
-            // textBox1
+            // TbxBuscar
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(3, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(559, 27);
-            this.textBox1.TabIndex = 0;
-            // 
-            // button6
-            // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.Location = new System.Drawing.Point(568, 22);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(141, 29);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Buscar";
-            this.button6.UseVisualStyleBackColor = true;
+            this.TbxBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TbxBuscar.Location = new System.Drawing.Point(3, 22);
+            this.TbxBuscar.Name = "TbxBuscar";
+            this.TbxBuscar.Size = new System.Drawing.Size(706, 27);
+            this.TbxBuscar.TabIndex = 0;
+            this.TbxBuscar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FrmGruposEntidades
             // 
@@ -365,7 +358,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox TbxBuscar;
     }
 }

@@ -19,7 +19,6 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-
         #region "EVENTOS"
 
         private void entidadesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -115,5 +114,14 @@ namespace WinFormsApp1
 
         #endregion
 
+        private void FrmMenúPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -4,7 +4,11 @@ using System.Text;
 
 namespace WinFormsLibrary1
 {
-    class Negocios
+    public class Negocios
     {
+        public bool VerificarLimiteCredito(int credito)
+        {
+            if (credito <= 0) return false; else return true;
+        }
     }
 }

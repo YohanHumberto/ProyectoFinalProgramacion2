@@ -49,7 +49,7 @@ namespace WinFormsApp1
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TbxBuscar = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -330,7 +330,7 @@ namespace WinFormsApp1
             // 
             this.tableLayoutPanel8.ColumnCount = 1;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.46554F));
-            this.tableLayoutPanel8.Controls.Add(this.textBox2, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.TbxBuscar, 0, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
@@ -341,13 +341,14 @@ namespace WinFormsApp1
             this.tableLayoutPanel8.Size = new System.Drawing.Size(711, 64);
             this.tableLayoutPanel8.TabIndex = 4;
             // 
-            // textBox2
+            // TbxBuscar
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(3, 13);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(705, 27);
-            this.textBox2.TabIndex = 0;
+            this.TbxBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TbxBuscar.Location = new System.Drawing.Point(3, 13);
+            this.TbxBuscar.Name = "TbxBuscar";
+            this.TbxBuscar.Size = new System.Drawing.Size(705, 27);
+            this.TbxBuscar.TabIndex = 0;
+            this.TbxBuscar.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // FrmTiposEntidades
             // 
@@ -399,6 +400,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TbxBuscar;
     }
 }

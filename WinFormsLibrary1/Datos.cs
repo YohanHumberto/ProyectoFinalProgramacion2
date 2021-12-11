@@ -141,7 +141,7 @@ namespace WinFormsLibrary1
             {
                 connection.Open();
 
-                SqlCommand command = new SqlCommand("select * from GruposEntidades where Id = @id", connection);
+                SqlCommand command = new SqlCommand("select * from GruposEntidades where IdGrupoEntidad = @id", connection);
 
                 command.Parameters.AddWithValue("@id", id);
 
@@ -182,7 +182,7 @@ namespace WinFormsLibrary1
             {
                 connection.Open();
 
-                SqlCommand command = new SqlCommand("select * from TiposEntidades where Id = @id", connection);
+                SqlCommand command = new SqlCommand("select * from TiposEntidades where IdTipoEntidad = @id", connection);
 
                 command.Parameters.AddWithValue("@id", id);
 
@@ -495,7 +495,7 @@ namespace WinFormsLibrary1
 
         public bool AddGruposEntidade(GruposEntidad gruposEntidad)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO GruposEntidades(Descripcion,Comentario,Status,NoEliminable) values(@Descripcion,@Comentario,@Status,@NoEliminable)", connection);
+            SqlCommand command = new SqlCommand("INSERT INTO GruposEntidades(Descripcion,Comentario,Statu,NoEliminable) values(@Descripcion,@Comentario,@Status,@NoEliminable)", connection);
 
             command.Parameters.AddWithValue("@Descripcion", gruposEntidad.Descripcion);
             command.Parameters.AddWithValue("@Comentario", gruposEntidad.Comentario);
@@ -507,7 +507,7 @@ namespace WinFormsLibrary1
 
         public bool AddTiposEntidade(TiposEntidad tiposEntidad)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO TiposEntidades(Descripcion,IdGrupoEntidad,Comentario,Status,NoEliminable) values(@Descripcion,@IdGrupoEntidad,@Comentario,@Status,@NoEliminable)", connection);
+            SqlCommand command = new SqlCommand("INSERT INTO TiposEntidades(Descripcion,IdGrupoEntidad,Comentario,Statu,NoEliminable) values(@Descripcion,@IdGrupoEntidad,@Comentario,@Status,@NoEliminable)", connection);
 
             command.Parameters.AddWithValue("@Descripcion", tiposEntidad.Descripcion);
             command.Parameters.AddWithValue("@IdGrupoEntidad", tiposEntidad.IdGrupoEntidad);
@@ -524,7 +524,7 @@ namespace WinFormsLibrary1
         public bool EditEntidad(Entidad entidad)
         {
 
-            SqlCommand command = new SqlCommand("UPDATE Entidades SET Descripcion=@Descripcion,Direccion=@Direccion, Localidad=@Localidad, TipoEntidad=@TipoEntidad,TipoDocumento=@TipoDocumento,NumeroDocumento=@NumeroDocumento,Teléfonos=@Teléfonos,URLPaginaWeb=@URLPaginaWeb,URLFacebook=@URLFacebook,URLInstagram=@URLInstagram,URLTwitter=@URLTwitter,URLTikTok=@URLTikTok,IdGrupoEntidad=@IdGrupoEntidad,IdTipoEntidad=@IdTipoEntidad,LimiteCredito=@LimiteCredito,UserNameEntidad=@UserNameEntidad,PassworEntidad=@PassworEntidad,RolUserEntidad=@RolUserEntidad,Comentario=@Comentario,Status=@Status,NoEliminable=@NoEliminable WHERE IdEntidad=@IdEntidad ", connection);
+            SqlCommand command = new SqlCommand("UPDATE Entidades SET Descripcion=@Descripcion,Direccion=@Direccion, Localidad=@Localidad, TipoEntidad=@TipoEntidad,TipoDocumento=@TipoDocumento,NumeroDocumento=@NumeroDocumento,Teléfonos=@Teléfonos,URLPaginaWeb=@URLPaginaWeb,URLFacebook=@URLFacebook,URLInstagram=@URLInstagram,URLTwitter=@URLTwitter,URLTikTok=@URLTikTok,IdGrupoEntidad=@IdGrupoEntidad,IdTipoEntidad=@IdTipoEntidad,LimiteCredito=@LimiteCredito,UserNameEntidad=@UserNameEntidad,PassworEntidad=@PassworEntidad,RolUserEntidad=@RolUserEntidad,Comentario=@Comentario,Statu=@Status,NoEliminable=@NoEliminable WHERE IdEntidad=@IdEntidad ", connection);
 
             command.Parameters.AddWithValue("@IdEntidad", entidad.IdEntidad);
             command.Parameters.AddWithValue("@Descripcion", entidad.Descripcion);
@@ -554,7 +554,7 @@ namespace WinFormsLibrary1
 
         public bool EditGruposEntidade(GruposEntidad gruposEntidad)
         {
-            SqlCommand command = new SqlCommand("UPDATE GruposEntidades SET Descripcion=@Descripcion,Comentario=@Comentario,Status=@Status,NoEliminable=@NoEliminable WHERE IdGrupoEntidad=@IdGrupoEntidad", connection);
+            SqlCommand command = new SqlCommand("UPDATE GruposEntidades SET Descripcion=@Descripcion,Comentario=@Comentario,Statu=@Status,NoEliminable=@NoEliminable WHERE IdGrupoEntidad=@IdGrupoEntidad", connection);
 
             command.Parameters.AddWithValue("@IdGrupoEntidad", gruposEntidad.IdGrupoEntidad);
             command.Parameters.AddWithValue("@Descripcion", gruposEntidad.Descripcion);
@@ -567,7 +567,7 @@ namespace WinFormsLibrary1
 
         public bool EditTiposEntidade(TiposEntidad tiposEntidad)
         {
-            SqlCommand command = new SqlCommand("UPDATE TiposEntidades SET Descripcion=@Descripcion,IdGrupoEntidad=@IdGrupoEntidad,Comentario=@Comentario,Status=@Status,NoEliminable=@NoEliminable WHERE IdTipoEntidad=@IdTipoEntidad", connection);
+            SqlCommand command = new SqlCommand("UPDATE TiposEntidades SET Descripcion=@Descripcion,IdGrupoEntidad=@IdGrupoEntidad,Comentario=@Comentario,Statu=@Status,NoEliminable=@NoEliminable WHERE IdTipoEntidad=@IdTipoEntidad", connection);
 
             command.Parameters.AddWithValue("@IdTipoEntidad", tiposEntidad.IdTipoEntidad);
             command.Parameters.AddWithValue("@Descripcion", tiposEntidad.Descripcion);

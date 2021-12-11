@@ -52,11 +52,8 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.759954F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.24004F));
-<<<<<<< HEAD
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
-=======
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.LblTituloUser, 1, 0);
@@ -83,7 +80,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.tableLayoutPanel2.Controls.Add(this.CbxEstado, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.CkbNoEliminable, 1, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(60, 84);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(59, 84);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -91,64 +88,22 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-<<<<<<< HEAD
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(593, 427);
-=======
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(591, 427);
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(579, 427);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // TbxComentario
             // 
             this.TbxComentario.Dock = System.Windows.Forms.DockStyle.Fill;
-<<<<<<< HEAD
-            this.TbxComentario.Location = new System.Drawing.Point(163, 109);
+            this.TbxComentario.Location = new System.Drawing.Point(159, 109);
             this.TbxComentario.Name = "TbxComentario";
-            this.TbxComentario.Size = new System.Drawing.Size(427, 27);
+            this.TbxComentario.Size = new System.Drawing.Size(417, 27);
             this.TbxComentario.TabIndex = 30;
             // 
-=======
-            this.TbxComentario.Location = new System.Drawing.Point(275, 109);
-            this.TbxComentario.Name = "TbxComentario";
-            this.TbxComentario.Size = new System.Drawing.Size(313, 27);
-            this.TbxComentario.TabIndex = 30;
-            // 
-            // TbxStatus
-            // 
-            this.TbxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxStatus.Location = new System.Drawing.Point(275, 215);
-            this.TbxStatus.Name = "TbxStatus";
-            this.TbxStatus.Size = new System.Drawing.Size(313, 27);
-            this.TbxStatus.TabIndex = 28;
-            // 
-            // TbxNoEliminable
-            // 
-            this.TbxNoEliminable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TbxNoEliminable.Location = new System.Drawing.Point(275, 321);
-            this.TbxNoEliminable.Name = "TbxNoEliminable";
-            this.TbxNoEliminable.Size = new System.Drawing.Size(313, 27);
-            this.TbxNoEliminable.TabIndex = 35;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label18.Location = new System.Drawing.Point(167, 318);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(102, 109);
-            this.label18.TabIndex = 24;
-            this.label18.Text = "NoEliminable:";
-            // 
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Dock = System.Windows.Forms.DockStyle.Right;
-<<<<<<< HEAD
-            this.label15.Location = new System.Drawing.Point(105, 212);
-=======
-            this.label15.Location = new System.Drawing.Point(217, 212);
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
+            this.label15.Location = new System.Drawing.Point(101, 212);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(52, 106);
             this.label15.TabIndex = 21;
@@ -158,11 +113,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             // 
             this.label14.AutoSize = true;
             this.label14.Dock = System.Windows.Forms.DockStyle.Right;
-<<<<<<< HEAD
-            this.label14.Location = new System.Drawing.Point(67, 106);
-=======
-            this.label14.Location = new System.Drawing.Point(179, 106);
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
+            this.label14.Location = new System.Drawing.Point(63, 106);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(90, 106);
             this.label14.TabIndex = 20;
@@ -172,11 +123,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             // 
             this.lblLastName.AutoSize = true;
             this.lblLastName.Dock = System.Windows.Forms.DockStyle.Right;
-<<<<<<< HEAD
-            this.lblLastName.Location = new System.Drawing.Point(67, 0);
-=======
-            this.lblLastName.Location = new System.Drawing.Point(179, 0);
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
+            this.lblLastName.Location = new System.Drawing.Point(63, 0);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(90, 106);
             this.lblLastName.TabIndex = 2;
@@ -185,21 +132,15 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             // TbxDescripcion
             // 
             this.TbxDescripcion.Dock = System.Windows.Forms.DockStyle.Fill;
-<<<<<<< HEAD
-            this.TbxDescripcion.Location = new System.Drawing.Point(163, 3);
+            this.TbxDescripcion.Location = new System.Drawing.Point(159, 3);
             this.TbxDescripcion.Name = "TbxDescripcion";
-            this.TbxDescripcion.Size = new System.Drawing.Size(427, 27);
-=======
-            this.TbxDescripcion.Location = new System.Drawing.Point(275, 3);
-            this.TbxDescripcion.Name = "TbxDescripcion";
-            this.TbxDescripcion.Size = new System.Drawing.Size(313, 27);
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
+            this.TbxDescripcion.Size = new System.Drawing.Size(417, 27);
             this.TbxDescripcion.TabIndex = 3;
             // 
             // CbxEstado
             // 
             this.CbxEstado.FormattingEnabled = true;
-            this.CbxEstado.Location = new System.Drawing.Point(163, 215);
+            this.CbxEstado.Location = new System.Drawing.Point(159, 215);
             this.CbxEstado.Name = "CbxEstado";
             this.CbxEstado.Size = new System.Drawing.Size(315, 28);
             this.CbxEstado.TabIndex = 54;
@@ -207,7 +148,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             // CkbNoEliminable
             // 
             this.CkbNoEliminable.AutoSize = true;
-            this.CkbNoEliminable.Location = new System.Drawing.Point(163, 321);
+            this.CkbNoEliminable.Location = new System.Drawing.Point(159, 321);
             this.CkbNoEliminable.Name = "CkbNoEliminable";
             this.CkbNoEliminable.Size = new System.Drawing.Size(121, 24);
             this.CkbNoEliminable.TabIndex = 55;
@@ -221,16 +162,12 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.tableLayoutPanel3.Controls.Add(this.BtnRegGuardar, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.BtnRegCancelar, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(60, 517);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(59, 517);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-<<<<<<< HEAD
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(593, 69);
-=======
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(591, 69);
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(579, 69);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // BtnRegGuardar
@@ -238,11 +175,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.BtnRegGuardar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRegGuardar.Location = new System.Drawing.Point(3, 3);
             this.BtnRegGuardar.Name = "BtnRegGuardar";
-<<<<<<< HEAD
-            this.BtnRegGuardar.Size = new System.Drawing.Size(587, 28);
-=======
-            this.BtnRegGuardar.Size = new System.Drawing.Size(585, 28);
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
+            this.BtnRegGuardar.Size = new System.Drawing.Size(573, 28);
             this.BtnRegGuardar.TabIndex = 0;
             this.BtnRegGuardar.Text = "Guardar";
             this.BtnRegGuardar.UseVisualStyleBackColor = true;
@@ -253,11 +186,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.BtnRegCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRegCancelar.Location = new System.Drawing.Point(3, 37);
             this.BtnRegCancelar.Name = "BtnRegCancelar";
-<<<<<<< HEAD
-            this.BtnRegCancelar.Size = new System.Drawing.Size(587, 29);
-=======
-            this.BtnRegCancelar.Size = new System.Drawing.Size(585, 29);
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
+            this.BtnRegCancelar.Size = new System.Drawing.Size(573, 29);
             this.BtnRegCancelar.TabIndex = 0;
             this.BtnRegCancelar.Text = "Cancelar";
             this.BtnRegCancelar.UseVisualStyleBackColor = true;
@@ -269,13 +198,9 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.LblTituloUser.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.LblTituloUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblTituloUser.Font = new System.Drawing.Font("Segoe UI", 24.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.LblTituloUser.Location = new System.Drawing.Point(60, 0);
+            this.LblTituloUser.Location = new System.Drawing.Point(59, 0);
             this.LblTituloUser.Name = "LblTituloUser";
-<<<<<<< HEAD
-            this.LblTituloUser.Size = new System.Drawing.Size(593, 81);
-=======
-            this.LblTituloUser.Size = new System.Drawing.Size(591, 81);
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
+            this.LblTituloUser.Size = new System.Drawing.Size(579, 81);
             this.LblTituloUser.TabIndex = 2;
             this.LblTituloUser.Text = "Grupos Entidades";
             this.LblTituloUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -288,6 +213,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmAddAndEditGruposEntidades";
             this.Text = "FrmAddAndEditGruposEntidades";
+            this.Load += new System.EventHandler(this.FrmAddAndEditGruposEntidades_Load);
             this.Resize += new System.EventHandler(this.FrmAddAndEditGruposEntidades_Resize);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

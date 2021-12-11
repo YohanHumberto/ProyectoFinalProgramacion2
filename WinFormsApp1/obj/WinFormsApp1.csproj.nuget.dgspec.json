@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsApp1\\WinFormsApp1.csproj": {}
+    "C:\\Users\\HP\\Desktop\\Nueva carpeta (3)\\ProyectoFinalProgramacion2\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsApp1\\WinFormsApp1.csproj": {
+    "C:\\Users\\HP\\Desktop\\Nueva carpeta (3)\\ProyectoFinalProgramacion2\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Nueva carpeta (3)\\ProyectoFinalProgramacion2\\WinFormsApp1\\WinFormsApp1.csproj",
         "projectName": "WinFormsApp1",
-        "projectPath": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\Nueva carpeta (3)\\ProyectoFinalProgramacion2\\WinFormsApp1\\WinFormsApp1.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsApp1\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\Nueva carpeta (3)\\ProyectoFinalProgramacion2\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -32,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsLibrary1\\WinFormsLibrary1.csproj": {
-                "projectPath": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsLibrary1\\WinFormsLibrary1.csproj"
+              "C:\\Users\\HP\\Desktop\\Nueva carpeta (3)\\ProyectoFinalProgramacion2\\WinFormsLibrary1\\WinFormsLibrary1.csproj": {
+                "projectPath": "C:\\Users\\HP\\Desktop\\Nueva carpeta (3)\\ProyectoFinalProgramacion2\\WinFormsLibrary1\\WinFormsLibrary1.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsLibrary1\\WinFormsLibrary1.csproj": {
+    "C:\\Users\\HP\\Desktop\\Nueva carpeta (3)\\ProyectoFinalProgramacion2\\WinFormsLibrary1\\WinFormsLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsLibrary1\\WinFormsLibrary1.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Nueva carpeta (3)\\ProyectoFinalProgramacion2\\WinFormsLibrary1\\WinFormsLibrary1.csproj",
         "projectName": "WinFormsLibrary1",
-        "projectPath": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsLibrary1\\WinFormsLibrary1.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\Nueva carpeta (3)\\ProyectoFinalProgramacion2\\WinFormsLibrary1\\WinFormsLibrary1.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsLibrary1\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\Nueva carpeta (3)\\ProyectoFinalProgramacion2\\WinFormsLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

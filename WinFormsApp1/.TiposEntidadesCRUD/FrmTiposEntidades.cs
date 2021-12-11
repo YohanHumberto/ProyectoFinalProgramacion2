@@ -68,6 +68,11 @@ namespace WinFormsApp1
             Agregar();
         }
 
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            Buscar();
+        }
+
         #endregion
         #region "METODOS PRIVADOS"
 
@@ -109,7 +114,17 @@ namespace WinFormsApp1
         {
             if (IndexDB != -1)
             {
-                datos.DeleteTiposEntidade(IndexDB);
+                List<GruposEntidad> data = datos.GetListGruposEntidades();
+
+                bool IsDependency = false;
+
+                foreach(GruposEntidad item in data)
+                {
+                    if (item.IdGrupoEntidad == datos.GetTiposEntidadesById(IndexDB).IdGrupoEntidad) IsDependency = true;
+                }
+
+                if (!IsDependency) datos.DeleteTiposEntidade(IndexDB); else MessageBox.Show("No se puede eliminar pporque tiene dependencias", "NOTIFICACION");
+
             }
             else
             {
@@ -117,8 +132,20 @@ namespace WinFormsApp1
             }
         }
 
+        private void Buscar()
+        {
+            if (!string.IsNullOrEmpty(TbxBuscar.Text))
+            {
+                dataGridView1.ClearSelection();
+                dataGridView1.DataSource = datos.GetAllByDescriptionTiposEntidades(TbxBuscar.Text);
+            }
+            else
+            {
+                LoadData();
+            }
+        }
+
         #endregion
 
-       
     }
 }

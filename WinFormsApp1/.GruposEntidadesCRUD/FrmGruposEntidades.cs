@@ -26,6 +26,7 @@ namespace WinFormsApp1
         }
 
         #region "EVENTOS"
+
         private void FrmGruposEntidades_Load(object sender, EventArgs e)
         {
             LoadData();
@@ -39,28 +40,32 @@ namespace WinFormsApp1
             }
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            Buscar();
         }
 
-
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             Agregar();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button5_Click_1(object sender, EventArgs e)
         {
             Editar();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
             Eliminar();
         }
 
-        private void dataGridview2_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -101,7 +106,7 @@ namespace WinFormsApp1
         {
             if (IndexDB != -1)
             {
-                FrmAddAndEditGruposEntidades Frm = new FrmAddAndEditGruposEntidades(false, IndexDB);
+                FrmAddAndEditGruposEntidades Frm = new FrmAddAndEditGruposEntidades(true, IndexDB);
                 Frm.MdiParent = FrmMenúPrincipal.instancia;
                 Frm.Show();
                 this.Close();
@@ -111,11 +116,13 @@ namespace WinFormsApp1
                 MessageBox.Show("Debe seleccionar un grupo de entidad para poder editarlo", "ADVERTENCIA");
             }
         }
+
         private void Eliminar()
         {
             if (IndexDB != -1)
             {
-                datos.DeleteGruposEntidade(IndexDB);
+               bool res = datos.DeleteGruposEntidade(IndexDB);
+                if (res) { MessageBox.Show("GrupoEntidad Elimanada con exito", "NOTIFICACION"); LoadData(); } else { MessageBox.Show("Error No se pudo eliminar el grupoentidad", "ADVERTENCIA"); }
             }
             else
             {
@@ -123,6 +130,20 @@ namespace WinFormsApp1
             }
         }
 
+        private void Buscar()
+        {
+            if (!string.IsNullOrEmpty(TbxBuscar.Text))
+            {
+                dataGridView2.ClearSelection();
+                dataGridView2.DataSource = datos.GetAllByDescriptionGruposEntidades(TbxBuscar.Text);
+            }
+            else
+            {
+                LoadData();
+            }
+        }
+
         #endregion
+
     }
 }

@@ -30,6 +30,13 @@ namespace WinFormsApp1.GruposEntidadesCRUD
         }
 
         #region "EVENTOS"
+
+        private void FrmAddAndEditGruposEntidades_Load(object sender, EventArgs e)
+        {
+            LoadEditMode();
+            LoadBox();
+        }
+
         private void FrmAddAndEditGruposEntidades_Resize(object sender, EventArgs e)
         {
             if (this.WindowState != FormWindowState.Maximized)
@@ -40,11 +47,7 @@ namespace WinFormsApp1.GruposEntidadesCRUD
 
         private void BtnRegGuardar_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
 
-=======
-           // ProcesarForm();
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
@@ -54,23 +57,31 @@ namespace WinFormsApp1.GruposEntidadesCRUD
 
         private void BtnRegCancelar_Click(object sender, EventArgs e)
         {
-            Volver();
+            Regresar();
         }
-       private void BtnRegGuardar_Click_1(object sender, EventArgs e)
+
+        private void BtnRegGuardar_Click_1(object sender, EventArgs e)
         {
             ProcesarForm();
         }
+
         #endregion
 
         #region "METODOS"
 
+        private void LoadEditMode()
+        {
+            if (EditIsActive)
+            {
+                GruposEntidad gruposEntidad = datos.GetGruposEntidadesById(Id);
+                TbxComentario.Text = gruposEntidad.Comentario;
+                TbxDescripcion.Text = gruposEntidad.Descripcion;
+                CkbNoEliminable.Checked = gruposEntidad.NoEliminable;
+            }
+        }
+
         private void LoadBox()
         {
-            ComboBoxItem OptDefault = new ComboBoxItem
-            {
-                Text = "Seleccione una opcion",
-                Value = -1,
-            };
 
             ComboBoxItem OptActiva = new ComboBoxItem
             {
@@ -84,12 +95,10 @@ namespace WinFormsApp1.GruposEntidadesCRUD
                 Value = 0,
             };
 
-            /*CbxEstado.Items.Add(OptDefault);
             CbxEstado.Items.Add(OptActiva);
             CbxEstado.Items.Add(OptInactiva);
-<<<<<<< HEAD
-            CbxEstado.SelectedItem = OptDefault;
 
+           
             if (EditIsActive == true)
             {
                 GruposEntidad entidad = datos.GetGruposEntidadesById(Id);
@@ -104,12 +113,14 @@ namespace WinFormsApp1.GruposEntidadesCRUD
                     }
                 }
             }
-=======
-            CbxEstado.SelectedItem = OptDefault;*/
->>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
+            else
+            {
+                CbxEstado.SelectedItem = OptActiva;
+            }
+
         }
 
-        /*private void ProcesarForm()
+        private void ProcesarForm()
         {
             ComboBoxItem selectedItemEstado = CbxEstado.SelectedItem as ComboBoxItem;
             if (string.IsNullOrEmpty(TbxDescripcion.Text) || string.IsNullOrEmpty(TbxComentario.Text))
@@ -127,19 +138,42 @@ namespace WinFormsApp1.GruposEntidadesCRUD
                         Status = selectedItemEstado.Text,
                         NoEliminable = CkbNoEliminable.Checked,
                     };
-                    bool res = datos.AddGruposEntidade(gruposEntidad);
-                    if (res == true)
+
+                    if (!EditIsActive)
                     {
-                        MessageBox.Show("El grupo de entidad se guardado con exito", "NOTIFICACION");
-                        FrmGruposEntidades Frm = new FrmGruposEntidades();
-                        Frm.WindowState = FormWindowState.Maximized;
-                        Frm.MdiParent = FrmMenúPrincipal.instancia;
-                        Frm.Show();
-                        this.Close();
+                        bool res = datos.AddGruposEntidade(gruposEntidad);
+                        if (res == true)
+                        {
+                            MessageBox.Show("El grupo de entidad se guardado con exito", "NOTIFICACION");
+                            FrmGruposEntidades Frm = new FrmGruposEntidades();
+                            Frm.WindowState = FormWindowState.Maximized;
+                            Frm.MdiParent = FrmMenúPrincipal.instancia;
+                            Frm.Show();
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se pudo guardar el grupo de entidad", "ADVERTENCIA");
+                        }
+
                     }
                     else
                     {
-                        MessageBox.Show("No se pudo guardar el grupo de entidad", "ADVERTENCIA");
+                        gruposEntidad.IdGrupoEntidad = Id;
+                        bool res = datos.EditGruposEntidade(gruposEntidad);
+                        if (res == true)
+                        {
+                            MessageBox.Show("El grupo de entidad se edito con exito", "NOTIFICACION");
+                            FrmGruposEntidades Frm = new FrmGruposEntidades();
+                            Frm.WindowState = FormWindowState.Maximized;
+                            Frm.MdiParent = FrmMenúPrincipal.instancia;
+                            Frm.Show();
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se pudo editar el grupo de entidad", "ADVERTENCIA");
+                        }
                     }
                 }
                 catch (Exception E)
@@ -149,17 +183,17 @@ namespace WinFormsApp1.GruposEntidadesCRUD
                 }
             }
         }
-        */
-        private void Volver()
+
+        private void Regresar()
         {
-            FrmGruposEntidades Frm = new FrmGruposEntidades();
+            FrmTiposEntidades Frm = new FrmTiposEntidades();
             Frm.WindowState = FormWindowState.Maximized;
             Frm.MdiParent = FrmMenúPrincipal.instancia;
             Frm.Show();
             this.Close();
         }
+
         #endregion
 
- 
     }
 }

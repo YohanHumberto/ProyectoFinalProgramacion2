@@ -99,6 +99,7 @@ namespace WinFormsApp1.EntidadesCRUD
         private void FrmAddAndEditEntidades_Load(object sender, EventArgs e)
         {
             LoadComboBox();
+            LoadEditMode();
         }
 
         private void CbxIdGrupoEntidad_SelectedValueChanged(object sender, EventArgs e)
@@ -108,6 +109,30 @@ namespace WinFormsApp1.EntidadesCRUD
         #endregion
 
         #region "Metodos Privados"
+
+        private void LoadEditMode()
+        {
+            if (EditIsActive)
+            {
+                Entidad entidad = datos.GetEntidadesById(Id);
+                TbxComentario.Text = entidad.Comentario;
+                TbxDescripcion.Text = entidad.Descripcion;
+                TbxDireccion.Text = entidad.Direccion;
+                TbxLocalidad.Text = entidad.Localidad;
+                TbxTeléfonos.Text = Convert.ToString(entidad.Teléfonos);
+                TbxLimiteCredito.Text = Convert.ToString(entidad.LimiteCredito);
+                TbxNumeroDocumento.Text = Convert.ToString(entidad.NumeroDocumento);
+                TbxPassworEntidad.Text = entidad.PassworEntidad;
+                TbxUserNameEntidad.Text = entidad.UserNameEntidad;
+                TbxURLPaginaWeb.Text = entidad.URLPaginaWeb;
+                TbxURLFacebook.Text = entidad.URLFacebook;
+                TbxURLInstagram.Text = entidad.URLInstagram;
+                TbxURLTwitter.Text = entidad.URLTwitter;
+                TbxURLTikTok.Text = entidad.URLTikTok;
+               
+                CkbNoEliminable.Checked = entidad.NoEliminable;
+            }
+        }
 
         private void LoadComboBox()
         {
