@@ -73,14 +73,16 @@ namespace WinFormsApp1
                 IndexDB = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
                 ActivarBotones();
             }
-#pragma warning disable CS0168 // La variable 'E' se ha declarado pero nunca se usa
             catch (Exception E)
-#pragma warning restore CS0168 // La variable 'E' se ha declarado pero nunca se usa
             {
                 MessageBox.Show("ERROR", "Notificacion");
             }
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Buscar();
+        }
         #endregion
 
         #region "METODOS PRIVADOS"
@@ -137,8 +139,20 @@ namespace WinFormsApp1
             }
         }
 
+        private void Buscar()
+        {
+            if (!string.IsNullOrEmpty(TbxBuscar.Text))
+            {
+                dataGridView1.ClearSelection();
+                dataGridView1.DataSource = datos.GetAllByDescriptionEntidades(TbxBuscar.Text);
+            }
+            else
+            {
+                LoadData();
+            }
+
+        }
         #endregion
 
-       
     }
 }

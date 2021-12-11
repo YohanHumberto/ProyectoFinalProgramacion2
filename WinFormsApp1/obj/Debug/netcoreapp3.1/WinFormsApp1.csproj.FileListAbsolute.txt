@@ -70,3 +70,4 @@ C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\D
 C:\Users\Asus Rog Zephyrus\Desktop\ProyectoFinalProgramacion2\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.genruntimeconfig.cache
 >>>>>>> d6fe6b0258eb7be4b7a5fe255de09ea2239f663e
 >>>>>>> 0c7f4fe00acc63969d60df8d4e84adb57a4e2dc0
+C:\Users\HP\Desktop\TAREA itla\Cuatrimestre IIII\Programacion II\SellPoint\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FrmAcercaDe.resources

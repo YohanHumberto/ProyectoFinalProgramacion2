@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus Rog Zephyrus\\Desktop\\ProyectoFinalProgramacion2\\WinFormsApp1\\WinFormsApp1.csproj": {}
+    "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus Rog Zephyrus\\Desktop\\ProyectoFinalProgramacion2\\WinFormsApp1\\WinFormsApp1.csproj": {
+    "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus Rog Zephyrus\\Desktop\\ProyectoFinalProgramacion2\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsApp1\\WinFormsApp1.csproj",
         "projectName": "WinFormsApp1",
-        "projectPath": "C:\\Users\\Asus Rog Zephyrus\\Desktop\\ProyectoFinalProgramacion2\\WinFormsApp1\\WinFormsApp1.csproj",
-        "packagesPath": "C:\\Users\\Asus Rog Zephyrus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus Rog Zephyrus\\Desktop\\ProyectoFinalProgramacion2\\WinFormsApp1\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsApp1\\WinFormsApp1.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Asus Rog Zephyrus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -34,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Asus Rog Zephyrus\\Desktop\\ProyectoFinalProgramacion2\\WinFormsLibrary1\\WinFormsLibrary1.csproj": {
-                "projectPath": "C:\\Users\\Asus Rog Zephyrus\\Desktop\\ProyectoFinalProgramacion2\\WinFormsLibrary1\\WinFormsLibrary1.csproj"
+              "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsLibrary1\\WinFormsLibrary1.csproj": {
+                "projectPath": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsLibrary1\\WinFormsLibrary1.csproj"
               }
             }
           }
@@ -71,22 +69,20 @@
         }
       }
     },
-    "C:\\Users\\Asus Rog Zephyrus\\Desktop\\ProyectoFinalProgramacion2\\WinFormsLibrary1\\WinFormsLibrary1.csproj": {
+    "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsLibrary1\\WinFormsLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus Rog Zephyrus\\Desktop\\ProyectoFinalProgramacion2\\WinFormsLibrary1\\WinFormsLibrary1.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsLibrary1\\WinFormsLibrary1.csproj",
         "projectName": "WinFormsLibrary1",
-        "projectPath": "C:\\Users\\Asus Rog Zephyrus\\Desktop\\ProyectoFinalProgramacion2\\WinFormsLibrary1\\WinFormsLibrary1.csproj",
-        "packagesPath": "C:\\Users\\Asus Rog Zephyrus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus Rog Zephyrus\\Desktop\\ProyectoFinalProgramacion2\\WinFormsLibrary1\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsLibrary1\\WinFormsLibrary1.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\TAREA itla\\Cuatrimestre IIII\\Programacion II\\SellPoint\\WinFormsLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Asus Rog Zephyrus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

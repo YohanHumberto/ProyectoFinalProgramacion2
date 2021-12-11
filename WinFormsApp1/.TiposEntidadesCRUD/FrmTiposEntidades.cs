@@ -44,6 +44,7 @@ namespace WinFormsApp1
                 MessageBox.Show("ERROR", "Notificacion");
             }
         }
+
         private void FrmTiposEntidades_Resize(object sender, EventArgs e)
         {
             if (this.WindowState != FormWindowState.Maximized)

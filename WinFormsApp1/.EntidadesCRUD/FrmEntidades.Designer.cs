@@ -38,7 +38,11 @@ namespace WinFormsApp1
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+<<<<<<< HEAD
             this.textBox1 = new System.Windows.Forms.TextBox();
+=======
+            this.TbxBuscar = new System.Windows.Forms.TextBox();
+>>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -170,7 +174,11 @@ namespace WinFormsApp1
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.46554F));
+<<<<<<< HEAD
             this.tableLayoutPanel3.Controls.Add(this.textBox1, 0, 1);
+=======
+            this.tableLayoutPanel3.Controls.Add(this.TbxBuscar, 0, 1);
+>>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -181,14 +189,24 @@ namespace WinFormsApp1
             this.tableLayoutPanel3.Size = new System.Drawing.Size(711, 69);
             this.tableLayoutPanel3.TabIndex = 4;
             // 
-            // textBox1
+            // TbxBuscar
             // 
+<<<<<<< HEAD
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(3, 22);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(705, 34);
             this.textBox1.TabIndex = 0;
+=======
+            this.TbxBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TbxBuscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TbxBuscar.Location = new System.Drawing.Point(3, 22);
+            this.TbxBuscar.Name = "TbxBuscar";
+            this.TbxBuscar.Size = new System.Drawing.Size(705, 34);
+            this.TbxBuscar.TabIndex = 0;
+            this.TbxBuscar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+>>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
             // 
             // FrmEntidades
             // 
@@ -222,6 +240,10 @@ namespace WinFormsApp1
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox textBox1;
+=======
+        private System.Windows.Forms.TextBox TbxBuscar;
+>>>>>>> ff4137b08af0483179c601e81dc9b4a17101dbe4
     }
 }
